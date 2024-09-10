@@ -30,7 +30,7 @@ export default function render(
     document.getElementById(element.id).appendChild(code);
     const scriptTag = document.createElement("script");
     document.body.appendChild(scriptTag).src = path.join(dir, tsx);
-    const modifiedHTML = document.head.innerHTML + document.body.outerHTML;
+    const modifiedHTML = document.head.outerHTML + document.body.outerHTML;
 
     //const p = path.relative(dir, "pages")
     const filename = path.join(

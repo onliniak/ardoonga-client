@@ -16,15 +16,15 @@ writeFile("src/render.test.html", `<html><body id="app"></body></html>`);
 const dom = new JSDOM(`<html><body id="app"></body></html>`);
 const document = dom.window.document;
 
-console.log(
-  render(
-    App(),
-    document.getElementById("app"),
-    __filename.substring(0, __filename.length - 3) + "html",
-    __dirname,
-    "Index.tsx"
-  )
-)
+// console.log(
+//   render(
+//     App(),
+//     document.getElementById("app"),
+//     __filename.substring(0, __filename.length - 3) + "html",
+//     __dirname,
+//     "Index.tsx"
+//   )
+// )
 
 test("it pre-render component and overwrite render function without modify original behavior", () => {
   render(
