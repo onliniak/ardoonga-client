@@ -39,5 +39,5 @@ test("it pre-render component and overwrite render function without modify origi
       `<html>${document.body.outerHTML}</html>`,
     );
   });
-  unlink("pages/render.html");
+  //unlink("pages/render.html");
 });
