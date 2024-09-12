@@ -4,6 +4,7 @@
       "target": "ESNext",
       "module": "ESNext",
       "moduleResolution": "node",
+      "allowJs": true,
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       "jsx": "preserve",
@@ -13,7 +14,9 @@
       "isolatedModules": true,
       "paths": {
         "@/*": ["./src/data/*"],
-        "@/components/*": ["./src/ui/*"]
+        "@/components/*": ["./src/ui/*"],
+        "@/events": ["./src/data/eventsEmitters"],
+        "@/adapters": ["./src/data/adapters"]
       },
       "removeComments": true
     },

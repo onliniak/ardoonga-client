@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "fs";
-import type { PathLike } from "fs";
+//import type { PathLike } from "fs";
 import { JSDOM } from "jsdom";
-import type { MountableElement } from "solid-js/web";
+//import type { MountableElement } from "solid-js/web";
 import { render as r } from "solid-js/web";
 import { exec } from "child_process";
 import path from "path";
@@ -14,11 +14,11 @@ function write(filepath, filecontent) {
 
 // Pre-render the component
 export default function render(
-  code : Element,
-  element : MountableElement,
-  file : string,
-  dir : string,
-  tsx? : PathLike,
+  code,// : Element,
+  element,// : MountableElement,
+  file,// : string,
+  dir,// : string,
+  tsx = undefined//? : PathLike
 ) {
   readFile(file, "utf8", (err, data) => {
     if (err) {
@@ -42,5 +42,5 @@ export default function render(
        ReMove html file from currrent directory */
     exec(`mv ${filename} pages/ && rm ${file}`);
   });
-  return r(() => code, element!);
+  return r(() => code, element);
 }
