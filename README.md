@@ -57,6 +57,10 @@ Elementy fallback mogą korzystać z składni EJS/ERB i podobnych.
 
 #### CSS
 
+##### CSS Modules
+
+Domyślnie włączone, przygotowane z myślą o tym nowoczesnym stylu a´la Tailwind albo Bootstrap.
+
 https://docs.solidjs.com/guides/styling-components/css-modules <br /> 
 https://github.com/css-modules/css-modules/blob/master/docs/composition.md <br />
 https://github.com/css-modules/css-modules/blob/master/docs/theming.md
@@ -72,6 +76,11 @@ https://github.com/css-modules/css-modules/blob/master/docs/theming.md
 ```
 
 Tak się zastanawiam, czy nie byłoby lepiej pójść w https://vanilla-extract.style/.
+
+##### SCSS
+
+Sass nie chce działać na StackBlitzu + Chromebook. <br /> 
+Przyjmuje bardziej tradycyjne podejście, gdzie wiele małych plików CSS łączy się w jedną dużą klasę.
 
 ### Data
 
@@ -169,3 +178,13 @@ dzielnice1:
     - ff: dd
     - io
 ```
+
+## Stackblitz
+
+Nie działa zbyt dobrze z 4 GB RAMu.
+
+1. Otwórz https://stackblitz.com/github/onliniak/ardoonga-client (stara wersja).
+2. Zaczekaj aż się w pełni załaduje.
+3. Błąd "Out of memory" znika. Pojedyncza karta i pojedyncze okno.
+4. Zaloguj się i otwórz nową wersję. https://stackblitz.com/~/github/onliniak/ardoonga-client
+5. Raz zadziała, a raz nie. Jak karta zżera po 1,5 GB raczej nic nie pomoże.
