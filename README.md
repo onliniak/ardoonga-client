@@ -75,8 +75,6 @@ https://github.com/css-modules/css-modules/blob/master/docs/theming.md
 .normal:hover {}
 ```
 
-Tak się zastanawiam, czy nie byłoby lepiej pójść w https://vanilla-extract.style/.
-
 ##### SCSS
 
 Sass nie chce działać na StackBlitzu + Chromebook. <br /> 
@@ -187,4 +185,10 @@ Nie działa zbyt dobrze z 4 GB RAMu.
 2. Zaczekaj aż się w pełni załaduje.
 3. Błąd "Out of memory" znika. Pojedyncza karta i pojedyncze okno.
 4. Zaloguj się i otwórz nową wersję. https://stackblitz.com/~/github/onliniak/ardoonga-client
+```sh
+git checkout main
+git add .
+git commit -m "msg"
+git push
+```
 5. Raz zadziała, a raz nie. Jak karta zżera po 1,5 GB raczej nic nie pomoże.
