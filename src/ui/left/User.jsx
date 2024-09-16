@@ -1,7 +1,10 @@
-import { loadUserFromPersistentStorage } from "@/stores/User"
+import { getUserStore, loadUserFromPersistentStorage } from "@/stores/User"
+import { openDatabase } from "@/stores/IndexedDB/DB"
 import "./User.scss"
 
-const user = loadUserFromPersistentStorage()
+openDatabase("User")
+loadUserFromPersistentStorage()
+const user = getUserStore
 
 export default function User() {
     return (

@@ -1,3 +1,5 @@
+import { setIDBStore } from "../IndexedDBStores"
+
 // https://javascript.info/indexeddb#transactions
 // https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
 
@@ -10,7 +12,17 @@ export function openDatabase(arrayObjectStore, thisObjectStore = arrayObjectStor
         // requests!
         console.error(`Database error: ${event.target.error?.message}`);
     };
-    request.onsuccess = (event) => {db = event.target.result}
+    request.onsuccess = (event) => {
+        db = event.target.result
+            .transaction(arrayObjectStore, access)
+            .objectStore(thisObjectStore);
+        let obj = {}
+        obj[thisObjectStore] = db
+        setIDBStore("array", (currentUsers) => [
+            ...currentUsers,
+            obj
+        ])
+    }
     request.onupgradeneeded = (event) => {
         // Save the IDBDatabase interface
         db = event.target.result;
@@ -21,9 +33,15 @@ export function openDatabase(arrayObjectStore, thisObjectStore = arrayObjectStor
         // finished before adding data into it.
         objectStore.transaction.oncomplete = () => {
             // Store values in the newly created objectStore.
-            return db
+            let store = db
                 .transaction(arrayObjectStore, access)
                 .objectStore(thisObjectStore);
+            let obj = {}
+            obj[thisObjectStore] = store
+            setIDBStore("array", (currentUsers) => [
+                ...currentUsers,
+                obj
+            ])
         };
     };
 }

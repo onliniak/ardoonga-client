@@ -1,31 +1,33 @@
 import { createStore } from "solid-js/store"
-import { openDatabase } from "./IndexedDB/DB"
+import { store } from "./IndexedDBStores";
+
+// Initialize store
+export const [getUserStore, setUserStore] = createStore({
+    name: "",
+    id: 0
+})
 
 export function loadUserFromPersistentStorage() {
-    // Initialize store
-    const [getUserStore, ] = createStore({
-        name: "",
-        id: 0
-    })
+    if (store.array.find((element) => element.User) === undefined) {
+        setTimeout(synchronizeUserStore, 5000)
+    }
 
-    console.log(openDatabase("User"))
+    function synchronizeUserStore() {
+        const transaction = store.array.find((element) => element.User).User
 
-    // // non-reactive IndexedDB value to reactive SolidJS signal
-    // const transaction = openDatabase("User")
-    // transaction.openCursor("username").onsuccess = function (event) {
-    //     if (event.target.result !== undefined) { // key already exist
-    //         setUserStore("name", event.target.result)
-    //     } else { // key not exist
-    //         setUserStore("name", "Username")
-    //     }
-    // };
-    // transaction.openCursor("userid").onsuccess = function (event) {
-    //     if (event.target.result !== undefined) {
-    //         setUserStore("id", event.target.result)
-    //     } else {
-    //         setUserStore("id", 111)
-    //     }
-    // };
+        // non-reactive IndexedDB value to reactive SolidJS signal
+        transaction.openCursor("username").onerror = function () {
+            setUserStore("name", "Username")
+            console.log(getUserStore)
+        }.onsuccess = function (event) {
+            setUserStore("name", event.target.result)
+        };
 
-    return getUserStore
+        transaction.openCursor("userid").onsuccess = function (event) {
+            setUserStore("id", event.target.result)
+        };
+        transaction.openCursor("username").onerror = function () {
+            setUserStore("id", 111)
+        }
+    }
 }
