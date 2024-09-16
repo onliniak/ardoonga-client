@@ -191,6 +191,7 @@ Nie działa zbyt dobrze z 4 GB RAMu.
 3. Błąd "Out of memory" znika. Pojedyncza karta i pojedyncze okno.
 4. Zaloguj się i otwórz nową wersję. https://stackblitz.com/~/github/onliniak/ardoonga-client
 ```sh
+git config --global user.email "34192273+onliniak@users.noreply.github.com"
 git checkout main # once
 git add .
 git commit -m "msg"
