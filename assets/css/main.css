@@ -11,18 +11,6 @@ main{
     display: grid;
     grid-template-columns: auto max-content /*94% 6%*/;
   }
-  #username > span{
-    float: right;
-    height: 28px;
-    /* M3/label/large - prominent */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.1px;
-    color: #1D192B;
-  }
   aside > header > nav > p{
     margin: 0;
   }

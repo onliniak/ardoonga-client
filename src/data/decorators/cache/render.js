@@ -27,6 +27,8 @@ export default function render(
     }
     const dom = new JSDOM(data);
     const document = dom.window.document;
+    // const noscript = document.createElement("noscript");
+    // const child = noscript.appendChild(code)
     document.getElementById(element.id).appendChild(code);
     const scriptTag = document.createElement("script");
     document.body.appendChild(scriptTag).src = path.join(dir, tsx);

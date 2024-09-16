@@ -1,0 +1,7 @@
+@use "../scss/M3" as M3 ;
+
+B3261E-container-float {
+    float: right;
+    height: 28px;
+    @include M3.M3-label-large
+}

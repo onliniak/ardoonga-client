@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import eslint from 'vite-plugin-eslint'
 import solidPlugin from 'vite-plugin-solid';
 import tsconfigPaths from 'vite-tsconfig-paths';
 // import devtools from 'solid-devtools/vite';
@@ -12,9 +13,15 @@ export default defineConfig({
     // devtools(),
     tsconfigPaths(),
     solidPlugin(),
+    eslint()
   ],
   server: {
-    port: 3000,
+    watch: {
+      usePolling: true,
+    },
+    host: true,
+    strictPort: true,
+    port: 5173,
   },
   build: {
     target: 'esnext',

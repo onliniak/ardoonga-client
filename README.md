@@ -41,9 +41,10 @@ Komponenty modyfikują treść po otrzymaniu niestandardowego wydarzenia.
 
 #### SSR
 
-Wyrzucony html zostanie dołączony do [ECR](https://crystal-lang.org/api/latest/ECR.html). Z tego powodu nie zajmujemy się nagłówkami serwera, czy autoryzacją.
+Wyrzucony html zostanie dołączony do [ECR](https://crystal-lang.org/api/latest/ECR.html). 
+Z tego powodu nie zajmujemy się nagłówkami serwera, czy autoryzacją.
 Elementy fallback mogą korzystać z składni EJS/ERB i podobnych. 
-```erb
+```ecr
 {"<%= user.profile.name %>"}
 
 <ul>
@@ -54,6 +55,11 @@ Elementy fallback mogą korzystać z składni EJS/ERB i podobnych.
 
 {'<%%= foo %>'}
 ```
+
+#### Pages
+
+Zgodnie z konwencją ogólny szablon index.html wywołuje src/ui/index.jsx, który z kolei renderuje 
+left.jsx (lewy panel), right.jsx(prawy panel) oraz środkową część z katalogu src/ui/pages/*.jsx.
 
 #### CSS
 
@@ -77,7 +83,6 @@ https://github.com/css-modules/css-modules/blob/master/docs/theming.md
 
 ##### SCSS
 
-Sass nie chce działać na StackBlitzu + Chromebook. <br /> 
 Przyjmuje bardziej tradycyjne podejście, gdzie wiele małych plików CSS łączy się w jedną dużą klasę.
 
 ### Data
