@@ -4,13 +4,14 @@ import "./User.scss"
 
 loadUserFromPersistentStorage()
 
-export const [user, setUserArray] = createSignal([]);
+export const [userName, setUserName] = createSignal("");
+export const [userID, setUserID] = createSignal(0);
 
 export default function User() {
     return (
         <p>
-            
-            <span class="B3261E-container-float">{ user.result["userID"] }</span>
+            { userName }
+            <span class="B3261E-container-float">{ userID }</span>
         </p>
     )
 }

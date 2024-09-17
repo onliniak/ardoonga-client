@@ -44,7 +44,7 @@ Komponenty modyfikują treść po otrzymaniu niestandardowego wydarzenia.
 Wyrzucony html zostanie dołączony do [ECR](https://crystal-lang.org/api/latest/ECR.html). 
 Z tego powodu nie zajmujemy się nagłówkami serwera, czy autoryzacją.
 Elementy fallback mogą korzystać z składni EJS/ERB i podobnych. 
-```ecr
+```erb
 {"<%= user.profile.name %>"}
 
 <ul>
@@ -182,20 +182,13 @@ dzielnice1:
     - io
 ```
 
-## Stackblitz
+## Known problems
 
-Nie działa zbyt dobrze z 4 GB RAMu.
+### StackBlitz Out of memory ← Chromebook
 
-1. Otwórz https://stackblitz.com/github/onliniak/ardoonga-client (stara wersja).
-2. Zaczekaj aż się w pełni załaduje.
-3. Błąd "Out of memory" znika. Pojedyncza karta i pojedyncze okno.
-4. Zaloguj się i otwórz nową wersję. https://stackblitz.com/~/github/onliniak/ardoonga-client
-```sh
-git config --global user.email "34192273+onliniak@users.noreply.github.com"
-git checkout main # once
-git add .
-git commit -m "msg"
-git push
-git pull
-```
-5. Raz zadziała, a raz nie. Jak karta zżera po 1,5 GB raczej nic nie pomoże.
+1. Chrome → Ustawienia → Więcej narzędzi → Menedżer zadań
+Zabij wszystko oprócz pierwszej pozycji, żeby wyczyścić wszystkie dane w przeglądarce.
+2. Nie włączaj narzędzi deweloperskich, wybierz otwórz podgląd w nowym oknie.
+Tutaj możesz spokojnie korzystać z konsoli.
+3. Czyść terminal regularnie.
+4. Zanim vite się nie uruchomi nie zamykaj okienka z pytaniem o instalację bota.

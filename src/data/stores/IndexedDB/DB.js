@@ -1,4 +1,3 @@
-import { setUserArray } from "@/components/left/User";
 import { userCallback } from "../User";
 
 // https://javascript.info/indexeddb#transactions
@@ -64,7 +63,7 @@ export function searchDatabase(ObjectStore, IDBKeyRange) {
                 .objectStore(ObjectStore)
                 .get(IDBKeyRange);
                 //.objectStoreNames;
-            setUserArray(IDBKeyRange, query)
+            userCallback(query)
         };
     }
 }
