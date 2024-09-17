@@ -1,33 +1,15 @@
-import { createStore } from "solid-js/store"
-import { store } from "./IndexedDBStores";
-
-// Initialize store
-export const [getUserStore, setUserStore] = createStore({
-    name: "",
-    id: 0
-})
+import { searchDatabase } from "./IndexedDB/DB";
 
 export function loadUserFromPersistentStorage() {
-    if (store.array.find((element) => element.User) === undefined) {
-        setTimeout(synchronizeUserStore, 5000)
-    }
+    // insertIntoDatabase("User", "userID", 7007)
+    // insertIntoDatabase("User", "username", "Bob")
 
-    function synchronizeUserStore() {
-        const transaction = store.array.find((element) => element.User).User
+    const keyRangeValue = IDBKeyRange.only("userID")
+    searchDatabase("User", keyRangeValue)
+}
 
-        // non-reactive IndexedDB value to reactive SolidJS signal
-        transaction.openCursor("username").onerror = function () {
-            setUserStore("name", "Username")
-            console.log(getUserStore)
-        }.onsuccess = function (event) {
-            setUserStore("name", event.target.result)
-        };
-
-        transaction.openCursor("userid").onsuccess = function (event) {
-            setUserStore("id", event.target.result)
-        };
-        transaction.openCursor("username").onerror = function () {
-            setUserStore("id", 111)
-        }
+export function userCallback(IDB){
+    IDB.onsuccess = (event) => {
+        console.log(event.target.result)
     }
 }

@@ -1,16 +1,16 @@
-import { getUserStore, loadUserFromPersistentStorage } from "@/stores/User"
-import { openDatabase } from "@/stores/IndexedDB/DB"
+import { createSignal } from "solid-js";
+import { loadUserFromPersistentStorage } from "@/stores/User"
 import "./User.scss"
 
-openDatabase("User")
 loadUserFromPersistentStorage()
-const user = getUserStore
+
+export const [user, setUserArray] = createSignal([]);
 
 export default function User() {
     return (
         <p>
-            { user.name }
-            <span class="B3261E-container-float">{ user.id }</span>
+            
+            <span class="B3261E-container-float">{ user.result["userID"] }</span>
         </p>
     )
 }
