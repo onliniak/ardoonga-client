@@ -1,8 +1,9 @@
 /* @refresh reload */
 import { render } from 'solid-js/web';
 import Left from './left/left';
+import { loadFromPersistentStorage } from '@/onPageLoadList';
 
-const left = document.getElementById('left');
+loadFromPersistentStorage()
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   throw new Error(
@@ -10,4 +11,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <Left />, left);
+render(() => <Left />, document.getElementById('left'));

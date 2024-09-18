@@ -24,6 +24,12 @@ Zdaje się, że nazywają to upośledzoną architekturą sześcianów w duchu An
 
 Mamy tu jednocześnie kod przeglądarkowy, serwer budujący aplikację oraz implementację niestandardowego protokołu Ardoonga.
 
+### onPageLoadList
+
+src\data\onPageLoadList.js synchronizuje IndexedDB z Solid Stores.
+
+W tym miejscu umieść wszystkie funkcje, które mają się załadować po uruchomieniu strony.
+
 ### Protokół
 
 src/data/adapters odbiera wiadomości ze świata zewnętrznego. Protokół jest tworzony na bieżąco w [Postmanie](https://www.postman.com/). Jak powstanie stabilna wersja, to utworzę nowe repozytorium.

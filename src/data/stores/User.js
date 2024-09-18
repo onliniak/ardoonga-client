@@ -1,16 +1,7 @@
-import { setUserID } from "@/components/left/User";
-import { searchDatabase, insertIntoDatabase } from "./IndexedDB/DB";
+import { createStore } from "solid-js/store"
 
-export function loadUserFromPersistentStorage() {
-    insertIntoDatabase("User", "userID", 7007)
-    // insertIntoDatabase("User", "username", "Bob")
-
-    const keyRangeValue = IDBKeyRange.only("userID")
-    searchDatabase("User", keyRangeValue)
-}
-
-export function userCallback(IDB){
-    IDB.onsuccess = (event) => {
-        setUserID(event.target.result)
-    }
-}
+// Initialize store
+export const [User, setUser] = createStore({
+  id: 0,
+  name: ""
+})
