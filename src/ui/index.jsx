@@ -1,5 +1,6 @@
 /* @refresh reload */
 import { render } from 'solid-js/web';
+import "@/components/scss/index.scss"
 import Left from './left/left';
 import { loadFromPersistentStorage } from '@/onPageLoadList';
 

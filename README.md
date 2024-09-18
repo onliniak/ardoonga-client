@@ -91,6 +91,15 @@ https://github.com/css-modules/css-modules/blob/master/docs/theming.md
 
 Przyjmuje bardziej tradycyjne podejście, gdzie wiele małych plików CSS łączy się w jedną dużą klasę.
 
+###### Picnic CSS
+
+Obok SakuraCSS jedyny znany mi przykład tego okropnego podejścia "pobierz 1 plik i nagle wszystko jest czytelne". 
+Być może nie współgra dobrze z niestandardowym gridem skopiowanym z Figmy. Być może część klas się nadpisuje mimowolnie. 
+Być może za chwilę nie będę w stanie sam odczytać własnego **src\ui\scss\index.scss**. Ale lepszego sposobu na kopiowanie 
+pomysłów różnych osób nie znam.
+
+Najważniejsze, że odpowiada za te wszystkie efekty specjalne jak przesuwane tabele, tooltipsy, czy wyskakujące okienka.
+
 ### Data
 
 src/data znany również jako @/ zawiera wszystkie pliki serwerowe.

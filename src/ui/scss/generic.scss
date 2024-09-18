@@ -1,0 +1,109 @@
+* {
+    box-sizing: inherit;
+  }
+  
+  html,
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  body {
+    color: $picnic-black;
+    font-size: 1.1em;
+    line-height: 1.5;
+    background: $picnic-white;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: $picnic-separation 0;
+  }
+  
+  li {
+    margin: 0 0 math.div($picnic-separation, 2);
+  }
+  
+  a {
+    color: $picnic-primary;
+    text-decoration: none;
+    box-shadow: none;
+    transition: $picnic-transition;
+  }
+  
+  
+  // The <pre> doesn't have a nice style from Normalize.css
+  
+  code {
+    padding: math.div($picnic-separation, 2) $picnic-separation;
+    font-size: .8em;
+    background: #f5f5f5;
+  }
+  
+  pre {
+    text-align: left;
+    padding: math.div($picnic-separation, 2);
+    background: #f5f5f5;
+    border-radius: $picnic-radius;
+  
+    code {
+      padding: 0;
+    }
+  }
+  
+  blockquote {
+    padding: 0 0 0 1em;
+    margin: 0 0 0 .1em;
+    box-shadow: inset 5px 0 rgba($picnic-black, .3);
+  }
+  
+  label {
+    cursor: pointer;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: repeat(28, auto);
+    margin: 1vw;
+  }
+  aside, article{
+    padding: 1vw;
+  }
+  aside > header > nav{
+    display: grid;
+    grid-template-columns: auto max-content /*94% 6%*/;
+  }
+  aside > header > nav > p{
+    margin: 0;
+  }
+  .stats-progress{
+    display: grid;
+    grid-template-columns: min-content auto max-content;
+  }
+  .stats-progress > p{
+    align-content: center;
+  }
+  .stats-progress > p > span{
+    font-family: 'Saira SemiCondensed';
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    /* hanging-punctuation is currently only supported in Safari. */
+    hanging-punctuation: first last;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'dnom' on, 'numr' on;
+  }
+  .stats-progress > p > span:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid;
+  }
+  .stats-progress > progress{
+    margin: 0 auto;
+  }
