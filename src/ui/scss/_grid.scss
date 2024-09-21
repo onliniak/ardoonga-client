@@ -1,0 +1,40 @@
+main{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: repeat(28, auto);
+    margin: 1vw;
+  }
+  aside, article{
+    padding: 1vw;
+  }
+  aside > header > nav{
+    display: grid;
+    grid-template-columns: auto max-content /*94% 6%*/;
+  }
+  aside > header > nav > p{
+    margin: 0;
+  }
+  .stats-progress{
+    display: grid;
+    grid-template-columns: min-content auto max-content;
+  }
+  .stats-progress > p{
+    align-content: center;
+  }
+  .stats-progress > p > span{
+    font-family: 'Saira SemiCondensed';
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    /* hanging-punctuation is currently only supported in Safari. */
+    hanging-punctuation: first last;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'dnom' on, 'numr' on;
+  }
+  .stats-progress > p > span:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid;
+  }
+  .stats-progress > progress{
+    margin: 0 auto;
+  }
