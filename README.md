@@ -18,6 +18,57 @@
 
 ``` npx vite ``` or ``` docker-compose up ``` or ``` npm run start ``` or ``` npm run dev -- --host ```
 
+## Historia
+
+Z 8 lat temu dzięki nadludzkim umiejętnościom udało mi się stworzyć jedyną gildię, 
+która zakończyła erę w jednym z klonów Vallheru. Tak nauczyłem się PHP 4/5. 
+Po wielkim zwycięstwie dyskutowaliśmy sobie jak tu zmienić świat na lepsze i 
+pomyślałem sobie tak: 
+
+1. Nikt nie chce klikać w mikroskopijne linki. Pozornie pomaga ale nie rozwiązuje przyczyny.
+2. W kodzie źródłowym jest mnóstwo nagłych teleportów, wyłączonych funkcjonalności i czystej magii.
+   - Im częściej bawisz się w górnika, tym większa szansa na śmierć. W kodzie nic o tym nie ma.
+   - Próbując wprowadzać małą zmianę możesz niechcący zepsuć coś innego.
+3. Badania pokazują, że ludzie szukają czegoś gdzie można dać własne teksty + zdjęcia,
+   a nie gry którą podobno można modyfikować do swoich potrzeb.
+   - Pamiętam jak zastępczyni króla stwierdziła, że robiła jakieś tam zmiany w tekstach
+     ale cała reszta wymaga większych umiejętności.
+4. Nikt nie wie jaki jest cel tej gry. Ani jak ją wygrać.   
+5. Patrząc na gry z czasów legendarnego Adobe Air i Adobe Flasha widzę dwa schematy:
+   - Albo masz mało czasu na odkrycie gry, więc musisz grać po kilka razy.
+   - Albo mamy pozornie szczęśliwe miejsce, które musi ulec całkowitej zagładzie ze względu na
+     strukturę dowodzenia albo ideologię. MLP i Deponia też się w to wpisują.
+     - Zwróć uwagę, że po oficjalnym zakończeniu kontynuacja "na siłę" doprowadza do coraz
+       gorszego końca.
+     - Coraz mocniej też widać, że trafiliśmy na bardzo rzadki okres, kiedy
+       działo się cokolwiek ciekawego.
+   - Mi się najbardziej podobają gry w stylu: wszystko chce Cię zabić, niby możesz znajdować
+     kolejnych członków drużyny i NPCów w losowych miejscach ale niektórzy z nich sprawią
+     więcej problemów, niż jest to warte. Albo wręcz doprowadzą do złego zakończenia.
+6. Najlepiej chyba zrobić podstawowy szablon swojej gry, którą zapakuję w oryginalne teksty,
+   mechaniki i grafiki z Vallheru 1.6, czy Orodlina. Pisanie rozszerzeń będzie łatwiejsze,
+   a z zewnątrz będzie wyglądać niemal identycznie jak oryginał.
+
+w XXI wieku nie chciało mi się płacić za internet 10-20 mbps. Mam więc darmowy 2G, co nieco spowalnia mi pracę.
+
+Zresztą albo się zastanawiam jakie problemy mogą się pojawić, zamiast robić. Albo czy rzeczywiście byłbym w 
+stanie zrobić dobrą historię w stylu fantasy ? W końcu czasy, kiedy losowi ludzie pisali losowe postacie i 
+losowe przygody w jednym uniwersum minęły gdzieś we wczesnych latach zerowych.
+
+Nawet gdyby to coś powstało to nikt już na mnie nie czeka. Jeszcze początkowo chciałem zrobić coś w stylu oświeconym. 
+Jak w tych blogach: zrób mniejszy projekt → wyślij w CV do bylejakiej firmy → spróbuj nie umrzeć z nudów → a dalej się zobaczy. 
+Teraz wiem, że posiadanie jakiejkolwiek wiedzy zmniejsza szansę przyjęcia nawet o 90%. Tylko nie mam dowodów. 
+Wystarczy przynależność to światowej sekty jak: tęczowi neomarksiści, życie białych czarnoskórych nie ma znaczenia  
+albo szkolne kółka zainteresowań.
+
+Na ten moment mam:
+- Prototyp zapisu/wczytania gry wieloosobowej.
+- Jakieś eksperymenty z wyświetlaniem statystyk i przekazywaniem ich wtyczkom.
+- Różne formy plików konfiguracyjnych.
+- Eksperymenty z wykorzystaniem statystyk z Generatora map Azgaar'a.
+
+  Albo wszystko czego potrzebowałem albo zupełnie nic w zależności jak się na to spojrzy.
+
 ## Zakres
 
 Zdaje się, że nazywają to upośledzoną architekturą sześcianów w duchu Androidowskim. 
