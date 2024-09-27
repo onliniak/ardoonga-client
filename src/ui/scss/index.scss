@@ -22,3 +22,5 @@ $picnic-button-margin: 0px;
 
 @import '../../../node_modules/picnic/src/plugins/tabs/plugin';
 @import '../../../node_modules/picnic/src/plugins/tooltip/plugin';
+
+body {max-width: max-content}
