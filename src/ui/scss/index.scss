@@ -1,6 +1,9 @@
 // Loads the Sass Math Module
 @use 'sass:math';
 
+$picnic-button-radius: 0px;
+$picnic-button-margin: 0px;
+
 // Label Numbers Font
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&display=swap');
 
@@ -15,7 +18,7 @@
 
 @import '../../../node_modules/picnic/src/plugins/card/plugin';
 @import '../../../node_modules/picnic/src/plugins/modal/plugin';
+@import '../../../node_modules/picnic/src/plugins/label/plugin';
 
-@import '../../../node_modules/picnic/src/plugins/dropimage/plugin';
 @import '../../../node_modules/picnic/src/plugins/tabs/plugin';
 @import '../../../node_modules/picnic/src/plugins/tooltip/plugin';
