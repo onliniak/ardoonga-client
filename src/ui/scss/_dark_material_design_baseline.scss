@@ -1,0 +1,20 @@
+$fore-color: rgb(230 224 233); //on-surface
+$secondary-fore-color: rgb(208 188 254); //primary
+$back-color: rgb(20 18 24); //surface
+$secondary-back-color: rgb(33 31 38); //surface-container
+//$secondary: rgb(204 194 220);
+
+// error
+// on-error-container
+// on-error
+$button-error-back-color:      rgb(242 184 181);  // Background color for secondary button color variant.
+$button-error-hover-back-color:rgb(140 29 24);   // Background color for secondary button color variant (hover).
+$button-error-fore-color:      rgb(96 20 16);   // Text color for secondary button color variant.
+
+$button-tertiary-back-color:      rgb(239 184 200);  // tertiary
+$button-tertiary-hover-back-color:rgb(255 216 228);  // on-tertiary-container
+$button-tertiary-fore-color:      rgb(73 37 50);     // on-tertiary
+
+$button-inverse-back-color:      rgb(230 224 233);  // inverse-surface
+$button-inverse-hover-back-color:rgb(103 80 164);   // inverse-primary
+$button-inverse-fore-color:      rgb(50 47 53);     // inverse-on-surface

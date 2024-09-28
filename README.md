@@ -140,16 +140,17 @@ https://github.com/css-modules/css-modules/blob/master/docs/theming.md
 
 ##### SCSS
 
-Przyjmuje bardziej tradycyjne podejście, gdzie wiele małych plików CSS łączy się w jedną dużą klasę.
+Ma bardziej tradycyjne podejście:
 
-###### Picnic CSS
+1. Chciałbym skorzystać z tego okropnego podejścia "pobierz jeden plik i strona od razu wygląda ładniej".
+2. Pobieram więc Mini CSS ale brakuje mi przesuwanych tabelek.
+3. Dodaję Picnic CSS i modlę się, by nie zepsuł mi całej strony.
+4. Na zdjęciu w Figmie wszystko wyglądało nieco inaczej. Tworzę więc kilka własnych plików i łączę z Mini CSS.
+5. Za chwilę zacznę się zastanawiać co zrobić z wersją mobilną.
 
-Obok SakuraCSS jedyny znany mi przykład tego okropnego podejścia "pobierz 1 plik i nagle wszystko jest czytelne". 
-Być może nie współgra dobrze z niestandardowym gridem skopiowanym z Figmy. Być może część klas się nadpisuje mimowolnie. 
-Być może za chwilę nie będę w stanie sam odczytać własnego **src\ui\scss\index.scss**. Ale lepszego sposobu na kopiowanie 
-pomysłów różnych osób nie znam.
+Wszystkie pliki trzymane są w **src\ui\scss**. Widziałem już coś podobnego i na dziś wszystko jest nieczytelne. U mnie pewnie będzie podobnie.
 
-Najważniejsze, że odpowiada za te wszystkie efekty specjalne jak przesuwane tabele, tooltipsy, czy wyskakujące okienka.
+Masz wybór albo CSS Modules albo SCSS (z tym mi się wygodniej pracuje). Dodatkowe wtyczki możemy brać z PostCSS. Kolory bierzemy z Figma's Material Theme Builder Baseline.
 
 ### Data
 

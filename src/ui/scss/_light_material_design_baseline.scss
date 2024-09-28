@@ -1,0 +1,17 @@
+$fore-color: rgb(29 27 32); // Text & foreground color //on-surface
+$secondary-fore-color: rgb(101 85 143);  //primary
+$back-color: rgb(254 247 255); //surface
+$secondary-back-color: rgb(243 237 247); //surface-container
+//$secondary: rgb(98 91 113) 
+
+$button-secondary-back-color:      rgb(179 38 30);     // Background color for secondary button color variant.
+$button-secondary-hover-back-color:rgb(65 14 11);     // Background color for secondary button color variant (hover).
+$button-secondary-fore-color:      rgb(255 255 255);     // Text color for secondary button color variant.
+
+$button-tertiary-back-color:      rgb(125 82 96);  // tertiary
+$button-tertiary-hover-back-color:rgb(255 216 228);  // on-tertiary-container
+$button-tertiary-fore-color:      rgb(255 255 255);     // on-tertiary
+
+$button-inverse-back-color:      rgb(50 47 53);    // inverse-surface
+$button-inverse-hover-back-color:rgb(208 188 255);        // inverse-primary
+$button-inverse-fore-color:      rgb(245 239 247);     //inverse-on-surface
