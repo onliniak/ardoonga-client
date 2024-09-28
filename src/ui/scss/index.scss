@@ -1,26 +1,40 @@
-// Loads the Sass Math Module
-@use 'sass:math';
+// Table of Content
+// 1. Fonts.
+// 2. Variables.
+// 3. Core (for example HTML elements).
+// 4. Icons.
+// 5. Plugins & custom classes.
 
-$picnic-button-radius: 0px;
-$picnic-button-margin: 0px;
+//<!-- 1. Fonts -->
 
 // Label Numbers Font
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&display=swap');
 
-@import './_grid.scss';
+//<!-- 2. Variables -->
+
+// Custom Variables
+$badges-single-paddig: 0.5rem;
+$left-aside-padding: 0.25rem ;
+$label-font-family: 'Saira SemiCondensed, sans-serif'; // Font stack for code elements
+
+//! Picnic CSS
+
+// Spaces
+$picnic-separation: .6em;
+
+//<!-- 3. Core -->
+
+//! Mini CSS https://github.com/Chalarangelo/mini.css/
+@import '../../../node_modules/mini.css/src/mini/core';
+
+// Custom grid
+@import './grid.scss';
+
+//<!-- 4. Icons -->
+
 // https://icongr.am/
 
-//! Sakura CSS https://oxal.org/projects/sakura/
-@import '../../../node_modules/sakura.css/scss/sakura.scss';
+//<!-- 5. Plugins -->
 
 //! Picnic CSS http://www.picnicss.com/
-@import '../../../node_modules/picnic/src/themes/default/theme';
-
-@import '../../../node_modules/picnic/src/plugins/card/plugin';
-@import '../../../node_modules/picnic/src/plugins/modal/plugin';
-@import '../../../node_modules/picnic/src/plugins/label/plugin';
-
 @import '../../../node_modules/picnic/src/plugins/tabs/plugin';
-@import '../../../node_modules/picnic/src/plugins/tooltip/plugin';
-
-body {max-width: max-content}

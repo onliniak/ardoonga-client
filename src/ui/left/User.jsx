@@ -1,5 +1,4 @@
 import { User } from "@/stores/User"
-import "./User.scss"
 
 export default function UserInfo() {
     return (

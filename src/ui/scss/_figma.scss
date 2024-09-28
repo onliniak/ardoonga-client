@@ -1,0 +1,20 @@
+@mixin M3-label-large {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #1D192B;
+}
+
+@mixin label-number{
+    font-family: $label-font-family;
+    font-stretch: semi-condensed;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    /* hanging-punctuation is currently only supported in Safari. */
+    hanging-punctuation: first last;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'dnom' on, 'numr' on;
+}

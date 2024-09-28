@@ -1,40 +1,62 @@
-main{
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
-    grid-template-rows: repeat(28, auto);
-    margin: 1vw;
+@import './figma';
+@import './ui/left/User/User';
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-rows: repeat(28, auto);
+  margin: $universal-margin;
+}
+
+aside,
+article {
+  padding: $universal-padding;
+}
+
+aside>header>nav {
+  display: grid;
+  grid-template-columns: auto max-content
+    /*94% 6%*/
+  ;
+
+  &>span{
+    @include label-number;
+    font-size: calc(1.8rem / var(#{$heading-ratio-var}));
+    padding-right: $badges-single-paddig;
   }
-  aside, article{
-    padding: 1vw;
-  }
-  aside > header > nav{
-    display: grid;
-    grid-template-columns: auto max-content /*94% 6%*/;
-  }
-  aside > header > nav > p{
-    margin: 0;
-  }
-  .stats-progress{
-    display: grid;
-    grid-template-columns: min-content auto max-content;
-  }
-  .stats-progress > p{
+
+  &>* {
+    //childrens
     align-content: center;
   }
-  .stats-progress > p > span{
-    font-family: 'Saira SemiCondensed';
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.1px;
-    /* hanging-punctuation is currently only supported in Safari. */
-    hanging-punctuation: first last;
-    font-feature-settings: 'tnum' on, 'lnum' on, 'dnom' on, 'numr' on;
+
+  &>a{
+    padding-left: $left-aside-padding;
   }
-  .stats-progress > p > span:nth-child(1){
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid;
+}
+
+.stats-progress {
+  display: grid;
+  grid-template-columns: min-content auto max-content;
+
+  &>* {
+    //childrens
+    align-content: center;
+    padding: $left-aside-padding;
   }
-  .stats-progress > progress{
+
+  &>p>span {
+    @include label-number;
+
+    &:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: solid;
+    }
+  }
+
+  &>progress {
     margin: 0 auto;
   }
+}
