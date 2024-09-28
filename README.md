@@ -75,6 +75,12 @@ Zdaje się, że nazywają to upośledzoną architekturą sześcianów w duchu An
 
 Mamy tu jednocześnie kod przeglądarkowy, serwer budujący aplikację oraz implementację niestandardowego protokołu Ardoonga.
 
+### Middle
+
+Nowe strony utwórz w **src/ui/middle**. Później zamienię je automatycznie na pliki HTML o tej samej nazwie.
+
+Jednocześnie obok ES6 dodaję CommonJS.
+
 ### onPageLoadList
 
 src\data\onPageLoadList.js synchronizuje IndexedDB z Solid Stores.

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint'
 import solidPlugin from 'vite-plugin-solid';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import commonjs from 'vite-plugin-commonjs';
 // import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
@@ -11,6 +12,7 @@ export default defineConfig({
     For more info see https://github.com/thetarnav/solid-devtools/tree/main/packages/extension#readme
     */
     // devtools(),
+    commonjs(),
     tsconfigPaths(),
     solidPlugin(),
     eslint()

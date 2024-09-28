@@ -17,7 +17,8 @@
         "@/components/*": ["./src/ui/*"],
         "@/events": ["./src/data/eventsEmitters"],
         "@/adapters": ["./src/data/adapters"],
-        "@/config": ["./config"]
+        "@/config": ["./config"],
+        "@/page": ["./src/ui/middle"]
       },
       "removeComments": true
     },

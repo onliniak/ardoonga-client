@@ -28,6 +28,7 @@
         "sass": "^1.78.0",
         "solid-devtools": "^0.29.2",
         "typescript-eslint": "^8.6.0",
+        "vite-plugin-commonjs": "^0.10.3",
         "vite-plugin-eslint": "^1.8.1",
         "vitest": "^2.1.1"
     },
