@@ -69,6 +69,16 @@ Na ten moment mam:
 
   Albo wszystko czego potrzebowałem albo zupełnie nic w zależności jak się na to spojrzy.
 
+### ToDo
+
+- Meter zmienić na progress
+- Mobilki: # Tutaj chcę stworzyć coś jak https://twinery.org/
+  - writing-mode: sideways-rl; albo writing-mode: vertical-lr;
+    - text-orientation: upright;
+  - transform: rotate(0.25turn); albo transform: rotate(90deg);
+- https://web.archive.org/web/20240526085357/https://minicss.us/docs.htm
+- Mogę zrobić aliasy dla objektów z Nette Entity
+
 ## Zakres
 
 Zdaje się, że nazywają to upośledzoną architekturą sześcianów w duchu Androidowskim. 
