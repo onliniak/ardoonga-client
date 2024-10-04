@@ -13,6 +13,8 @@ article {
   padding: $universal-padding;
 }
 
+@media only screen and (min-width: 600px) {
+
 aside>header>nav {
   display: grid;
   grid-template-columns: auto max-content
@@ -59,4 +61,5 @@ aside>header>nav {
   &>progress {
     margin: 0 auto;
   }
+}
 }

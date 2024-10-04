@@ -1,0 +1,44 @@
+//! Figma's Material Theme Builder Baseline Color Scheme
+// https://m3.material.io/styles/color/static/baseline
+//
+// Last theme = default theme
+
+// Dark theme
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fore-color: rgb(230 224 233);
+        --secondary-fore-color: rgb(208 188 254);
+        --back-color: rgb(20 18 24);
+        --secondary-back-color: rgb(33 31 38);
+        --a-link-color: rgb(29, 27, 32);
+        --a-visited-color: rgb(50, 47, 53);
+        --button-fore-color: rgb(56 30 114);
+        --button-back-color: rgb(208 188 254);
+        --button-hover-back-color: rgb(255 216 228);
+    }
+
+    label.button:hover {
+        color: rgb(50 47 53);
+    }
+}
+
+// Light theme
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --fore-color: rgb(29, 27, 32); // Text & foreground color //on-surface
+        --secondary-fore-color: rgb(101, 85, 143); //primary
+        --back-color: rgb(254, 247, 255); //surface
+        --secondary-back-color: rgb(243, 237, 247); //surface-container
+        --a-link-color: rgb(29, 27, 32); //on-surface
+        --a-visited-color: rgb(50, 47, 53); // inverse-surface
+        --button-fore-color: rgb(255, 255, 255); //on-primary
+        --button-back-color: rgb(101, 85, 143); //primary
+        --button-hover-back-color: rgb(255, 216, 228) // on-tertiary-container
+    }
+
+    label.button:hover {
+        color: rgb(245 239 247); // inverse-on-surface
+    }
+}

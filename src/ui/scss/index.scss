@@ -4,6 +4,7 @@
 // 3. Core (for example HTML elements).
 // 4. Icons.
 // 5. Plugins & custom classes.
+// 6. Theme variables.
 
 //<!-- 1. Fonts -->
 
@@ -12,21 +13,13 @@
 
 //<!-- 2. Variables -->
 
-//! Figma's Material Theme Builder Baseline Color Scheme
-// https://m3.material.io/styles/color/static/baseline
-@import "./light_material_design_baseline";
+// Disable unused features
 
-$a-link-color: $fore-color;
-$a-visited-color: $button-inverse-back-color;
-$button-back-color: $secondary-fore-color;
-$button-hover-back-color: $button-tertiary-hover-back-color ;
-$button-fore-color: $button-color;
-
-label.button:hover {color:$button-inverse-back-color;}
+$_include-collapse: false;
 
 // Custom Variables
 $badges-single-paddig: 0.5rem;
-$left-aside-padding: 0.25rem ;
+$left-aside-padding: 0.25rem;
 $label-font-family: 'Saira SemiCondensed, sans-serif'; // Font stack for code elements
 
 //! Picnic CSS
@@ -54,10 +47,10 @@ $picnic-separation: .6em;
 @import '../../../node_modules/mini.css/src/mini/input_control';
 //contextual background elements, toasts and tooltips
 @import '../../../node_modules/mini.css/src/mini/contextual';
-@import '../../../node_modules/mini.css/src/mini/table';
+//@import '../../../node_modules/mini.css/src/mini/table';
 //progress bars and spinners
-@import '../../../node_modules/mini.css/src/mini/progress';
-@import '../../../node_modules/mini.css/src/mini/utility';
+//@import '../../../node_modules/mini.css/src/mini/progress';
+//@import '../../../node_modules/mini.css/src/mini/utility';
 
 //@include make-button-alt-color ($button-inverse-name, $button-inverse-back-color, $button-inverse-hover-back-color, $button-inverse-fore-color);
 //@include make-button-alt-color ($button-secondary-name, $button-secondary-back-color, $button-secondary-hover-back-color, $button-secondary-fore-color);
@@ -65,3 +58,8 @@ $picnic-separation: .6em;
 
 //! Picnic CSS http://www.picnicss.com/
 @import '../../../node_modules/picnic/src/plugins/tabs/plugin';
+
+//<!-- 6. Theme variables -->
+
+// Overwrite custom variables
+@import '../scss/variables_material_design_baseline';
