@@ -2,10 +2,7 @@
 import { render } from 'solid-js/web';
 import "@/components/scss/index.scss"
 import Left from './left/left';
-import { loadFromPersistentStorage } from '@/onPageLoadList';
 const Application = require('./middle/' + import.meta.env.VITE_CURRENT_PAGE_MIDDLE).default
-
-loadFromPersistentStorage()
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   throw new Error(

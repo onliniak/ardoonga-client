@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import eslint from 'vite-plugin-eslint'
+import eslint from "vite-plugin-eslint2";
 import solidPlugin from 'vite-plugin-solid';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import commonjs from 'vite-plugin-commonjs';

@@ -69,15 +69,33 @@ Na ten moment mam:
 
   Albo wszystko czego potrzebowałem albo zupełnie nic w zależności jak się na to spojrzy.
 
-### ToDo
+## ToDo
 
-- Meter zmienić na progress
 - Mobilki: # Tutaj chcę stworzyć coś jak https://twinery.org/
   - writing-mode: sideways-rl; albo writing-mode: vertical-lr;
     - text-orientation: upright;
   - transform: rotate(0.25turn); albo transform: rotate(90deg);
 - https://web.archive.org/web/20240526085357/https://minicss.us/docs.htm
 - Mogę zrobić aliasy dla objektów z Nette Entity
+- Spojrzeć na https://www.npmjs.com/package/eslint-plugin-project-structure i https://www.npmjs.com/package/eslint-plugin-testing-library#:~:text=ESLint%20plugin%20to%20follow%20best%20practices
+
+### Wydajność
+
+Generalnie sprawdzanie wydajności w testach wydaje mi się pozbawione sensu ale istnieje 
+```js
+//https://jestjs.io/docs/timer-mocks
+jest.useFakeTimers({timerLimit: 100});
+```
+
+Origin Private Filesystem nie jest wspierany w trybie incognito. Zrobić fallback do IDB.
+
+### Deprecated
+
+Jako samouk mam obowiązek korzystania w pierwszej kolejności z funkcji wbudowanych 
+w przeglądarkę. SolidJS jeszcze przeszło, bo sam zrobiłbym coś podobnego. Żadnych 
+większych strat w rozmiarze dokumentu, czy szybkości ładowania strony.
+
+Ale IndexedDB nie jestem pewny. Do tego będzie się teraz wyświetlać nieistotne ostrzeżenie: ```computations created outside a `createRoot` or `render` will never be disposed```. 
 
 ## Zakres
 
@@ -275,3 +293,12 @@ Zabij wszystko oprócz pierwszej pozycji, żeby wyczyścić wszystkie dane w prz
 Tutaj możesz spokojnie korzystać z konsoli.
 3. Czyść terminal regularnie.
 4. Zanim vite się nie uruchomi nie zamykaj okienka z pytaniem o instalację bota.
+
+### NPM Permissions
+
+1. Install Docker Desktop.
+2. Run container.
+3. In Docker Terminal: PS C:\Users\onliniak> docker exec -it --user=root ardoonga-client-node-1 /bin/sh
+4. rm package-lock.json
+5. npm cache validate
+6. npm update --include=dev --verbose

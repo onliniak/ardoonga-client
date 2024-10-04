@@ -1,6 +1,6 @@
-import { insertIntoDatabase } from "./stores/IndexedDB/DB";
-import { synchronizeIndexedDB_WithStore } from "./stores/IndexedDB/getAll";
-import { setUser } from "./stores/User";
+import { insertIntoDatabase } from "./deprecated/stores/IndexedDB/DB";
+import { synchronizeIndexedDB_WithStore } from "./deprecated/stores/IndexedDB/getAll";
+import { setUser } from "./deprecated/stores/User";
 
 export function loadFromPersistentStorage() {
     insertIntoDatabase("User", "id", 7007)
