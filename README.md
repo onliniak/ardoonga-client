@@ -79,6 +79,184 @@ Na ten moment mam:
 - Mogę zrobić aliasy dla objektów z Nette Entity
 - Spojrzeć na https://www.npmjs.com/package/eslint-plugin-project-structure i https://www.npmjs.com/package/eslint-plugin-testing-library#:~:text=ESLint%20plugin%20to%20follow%20best%20practices
 
+### Neon
+
+Trzeba przepisać JSON Schema na https://github.com/matej21/neon-js
+
+```json
+[
+    {
+        "key": "name",
+        "value": "test"
+    },
+    {
+        "key": "description",
+        "value": "test"
+    },
+    {
+        "key": "avatar",
+        "value": {
+            "_items": [
+                {
+                    "key": "male",
+                    "value": "https://myhost.eu/image.webp"
+                },
+                {
+                    "key": "female",
+                    "value": "https://myhost.eu/image.webp"
+                },
+                {
+                    "key": "awidth",
+                    "value": 1
+                },
+                {
+                    "key": "aheight",
+                    "value": 1
+                }
+            ],
+            "_indexes": {
+                "male": 0,
+                "female": 1,
+                "awidth": 2,
+                "aheight": 3
+            },
+            "_key": 0,
+            "length": 4
+        }
+    },
+    {
+        "key": "extra",
+        "value": {
+            "_items": [
+                {
+                    "key": 0,
+                    "value": {
+                        "value": "heritage",
+                        "attributes": {
+                            "_items": [
+                                {
+                                    "key": 0,
+                                    "value": "test"
+                                }
+                            ],
+                            "_indexes": {
+                                "0": 0
+                            },
+                            "_key": 1,
+                            "length": 1
+                        }
+                    }
+                },
+                {
+                    "key": 1,
+                    "value": {
+                        "value": "skills",
+                        "attributes": {
+                            "_items": [
+                                {
+                                    "key": 0,
+                                    "value": "test"
+                                }
+                            ],
+                            "_indexes": {
+                                "0": 0
+                            },
+                            "_key": 1,
+                            "length": 1
+                        }
+                    }
+                },
+                {
+                    "key": 2,
+                    "value": {
+                        "value": "attributes",
+                        "attributes": {
+                            "_items": [
+                                {
+                                    "key": 0,
+                                    "value": "test"
+                                }
+                            ],
+                            "_indexes": {
+                                "0": 0
+                            },
+                            "_key": 1,
+                            "length": 1
+                        }
+                    }
+                }
+            ],
+            "_indexes": {
+                "0": 0,
+                "1": 1,
+                "2": 2
+            },
+            "_key": 3,
+            "length": 3
+        }
+    }
+]
+```
+
+```neon
+name = test
+description = test
+
+avatar = [ 
+male    = https://myhost.eu/image.webp
+female  = https://myhost.eu/image.webp
+awidth  = 1
+aheight = 1
+]
+
+extra:
+- heritage (
+test
+)
+- skills (
+test
+)
+- attributes (
+test
+)
+```
+
+```js
+import * as neon from 'neon-js'
+
+try {
+  const neo = `
+name = test
+description = test
+
+avatar = [ 
+male    = https://myhost.eu/image.webp
+female  = https://myhost.eu/image.webp
+awidth  = 1
+aheight = 1
+]
+
+extra:
+- heritage (
+test
+)
+- skills (
+test
+)
+- attributes (
+test
+)
+  `
+  const result = neon.decode(neo)
+  console.log(JSON.stringify(result.items()))
+} catch (e) {
+  if (e instanceof neon.Error) {
+    console.log(e.message);
+  }
+  throw e;
+}
+```
+
 ### Wydajność
 
 Generalnie sprawdzanie wydajności w testach wydaje mi się pozbawione sensu ale istnieje 
