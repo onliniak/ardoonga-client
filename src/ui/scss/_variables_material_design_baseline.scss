@@ -35,10 +35,10 @@
         --a-visited-color: rgb(50, 47, 53); // inverse-surface
         --button-fore-color: rgb(255, 255, 255); //on-primary
         --button-back-color: rgb(101, 85, 143); //primary
-        --button-hover-back-color: rgb(255, 216, 228) // on-tertiary-container
+        --button-hover-back-color: rgb(255 216 228); // on-tertiary-container
     }
 
     label.button:hover {
-        color: rgb(245 239 247); // inverse-on-surface
+        color: rgb(50 47 53); // inverse-surface
     }
 }
