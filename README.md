@@ -79,9 +79,43 @@ Na ten moment mam:
 - Mogę zrobić aliasy dla objektów z Nette Entity
 - Spojrzeć na https://www.npmjs.com/package/eslint-plugin-project-structure i https://www.npmjs.com/package/eslint-plugin-testing-library#:~:text=ESLint%20plugin%20to%20follow%20best%20practices
 
+All rights belong to their respective owners.
+
 ### Neon
 
+https://ehrpg.github.io/qstar/
+
 Trzeba przepisać JSON Schema na https://github.com/matej21/neon-js
+
+https://www.npmjs.com/package/to-json-schema
+
+Źle się za to zabieram ... jeden duży NEON trzeba rozbić na mniejsze Schemy.
+
+```yaml
+$id: https://json-schema.hyperjump.io/schema
+$schema: https://json-schema.org/draft/2020-12/schema
+type: array
+items:
+  type: object
+  properties:
+    key:
+      type: string
+    value:
+      anyOf:
+        - type: string
+        - type: object
+          properties:
+            _items:
+              type: array
+              items:
+                type: object
+                properties:
+                  key:
+                    anyOf:
+                      - type: string
+                      - type: number
+
+```
 
 ```json
 [
@@ -273,7 +307,151 @@ Jako samouk mam obowiązek korzystania w pierwszej kolejności z funkcji wbudowa
 w przeglądarkę. SolidJS jeszcze przeszło, bo sam zrobiłbym coś podobnego. Żadnych 
 większych strat w rozmiarze dokumentu, czy szybkości ładowania strony.
 
-Ale IndexedDB nie jestem pewny. Do tego będzie się teraz wyświetlać nieistotne ostrzeżenie: ```computations created outside a `createRoot` or `render` will never be disposed```. 
+Ale IndexedDB nie jestem pewny. Do tego będzie się teraz wyświetlać nieistotne ostrzeżenie: 
+```computations created outside a `createRoot` or `render` will never be disposed```. 
+
+Szczególnie zastanawia mnie przypadek Windowsa XP. Korzystałem z niego i wiem, że 
+system lubi wyrzucać bluescreena jeśli w tle odbywa się zbyt wiele operacji jednocześnie. 
+To dlatego pierwszym rozszerzeniem zwykle jest NoScript. Pytanie jest o tyle istotne, że 
+Dexie zdaje się wspierać wszystko z pełnym wsparciem dla IndexedDB.
+
+#### Dexie - mniej znnae funkcje
+
+```js
+import { add } from "dexie";
+
+db.friends.update(friend.id, {
+  hobbies: add([
+    "skating",
+    "football"
+  ])
+});
+import { remove } from "dexie";
+
+db.friends.update(friend.id, {
+  hobbies: remove([
+    "curling"
+  ])
+});
+```
+
+## Tłumaczenie
+
+**Ta sekcja jest czysto notatkowa i gdybająca.**
+
+Jak powszechnie wiadomo polski jest najważniejszym językiem świata. 
+Wspiera odmiany przez przypadki, czas męsko- i nie-męsko- -osobowy oraz 
+powtarzanie spółgłosek (nauczycielka od niemieckiego i niemka z urodzenia 
+mówiła na to rolowanie czy jakoś tak).
+
+Tymczasem język prymitywny, stworzony przez kosmitów z myślą o sztucznej inteligencji 
+-- znany również jako angielski -- nie jest przygotowany na naszą gramatykę. 
+To właśnie dlatego tradycyjne tłumaczenie słownikowe wygląda tak źle. Dla Google 
+Tłumacza wszystkie przypadki są zamieniane na formę podstawową. Albo Crusader Kings II po polsku. 
+
+Niemiecki ma nie tylko odmiany ale również korzysta z nazw łacińskich: 
+
+- Nominative = Mianownik
+- Accusative = Biernik
+- Genitive = Dopełniacz
+- Dative = Celownik
+- Instrumental = Narzędnik
+- Locative = Miejscownik
+- Vocative = Wołacz
+
+Wszystkie 7 przypadków jest do odszukania w anglojęzycznym internecie. 
+Teoretycznie wystarczy użyć ideologii Chata GPT, czyli wszystkie słowa 
+zapisać jako **słowo-rzeczownik-męski-pojedynczy-biernik-nieformalny-emocja:smutek**. 
+Tak działa DeepL. Czasem zdarza mu się zarzucać jakąś dziwną gwarą (np. 
+zamiast *cargo* pisze *transport*) ale na ogół ma rację.
+
+Tylko teraz: chcę, by plik tłumaczeń był odczytywany przez wszystkie 
+urządzenia i języki programowania świata. Tak jakbym w przyszłości chciał 
+przejść na androida albo grafikę 2D. Noi jeśli skorzystam z 40 letniego 
+programu całość będzie wyglądać dość dziwnie i będzie wiecznie wyrzucać 
+ostrzeżenia o brakujących tłumaczeniach. 
+
+Mysłałem o po2json albo poedit.
+
+Ale później patrzę sobie na [context-group](https://stackoverflow.com/questions/46822326/what-is-context-group-in-xliff#:~:text=The%20%3Ccontext-group%3E%20element%20holds%20context%20elements%20relating%20to,be%20named%2C%20allowing%20different%20uses%20for%20each%20group.) 
+oraz alt-trans. Więcej: https://www.w3.org/International/its/wiki/XLIFF_Mapping i oficjalne https://www.oasis-open.org/committees/xliff/faq.php
+
+XLIFF 2.1 ma niemalże zero rozszerzeń ale nie powinien być aż tak trudny w użyciu. 
+Szczególnie, że istnieje *js-xml*. W podobny sposób mógłbym przenosić tłumaczenia na nowe języki programowania. 
+
+Końcówkka: xlif2
+
+Przykłady z: https://multilingual.com/article/201406-42.pdf
+```html
+ <p lang="en">He bought a yellow car. He loves yellow.</p>
+```
+```xliff
+<unit id="1">
+ <segment>
+  <source>He bought a yellow car. </source>
+  <target order="2">Il a acheté une voiture jaune.</
+ target>
+ </segment>
+ <segment>
+  <source>He loves yellow.</source>
+  <target order="1">Il adore le jaune. </target>
+ </segment>
+ </unit>
+```
+```xml
+<unit id="1">
+ <segment id="1">
+  <source>First sentence. </source>
+  <target>Première phrase. </target>
+ </segment>
+ <segment id="2">
+  <source>Second sentence.</source>
+  <target>Deuxième phrase.</target>
+ </segment>
+ </unit>
+```
+```xlif
+ <unit id="u123">
+ <mtc:matches>
+  <mtc:match id="1" ref="#m1" type="mt" origin="MS
+Translator-Hub" similarity="100">
+   <source>He is a good friend of mine.</source>
+   <target>Il est un bon ami à moi.</target>
+  </mtc:match>
+ <mtc:match id="2" ref="#1" type="tm" origin="myTM" 
+similarity="97">
+   <source>Good friends</source>
+   <target>Bons amis</target>
+  </mtc:match>
+ </mtc:matches>
+ <segment>
+ <source><mrk id="m1" type="mtc:match">He is a <pc id="1" 
+type="fmt">good friend</pc> of mine.</mrk></source>
+ </segment>
+ </unit>
+```
+
+Teoretycznie mogę dzielić zdania na mniejsze ale moja teoria wciąż jest aktualna. 
+Jako oryginalne źródło muszę dać wystarczająco dużo informacji, by ktoś mógł 
+powiedzmy na pierwszy rzut oka rozpoznać czas w angielskim jakiego użyć. Albo jak 
+w jego języku jest 5 odmian, żeby wiedział które gdzie użyć. Bez doświadczenia 
+nie jestem w stanie tego zrobić. A może ?
+
+W każdym bądź razie XML został uśmiercony, bo za długo się w nim pisze. 
+I nie określa niczego po za własnymi rozszerzeniami. Jednocześnie wymuszając 
+stosowanie podstawowych zasad albo nie uruchomi się w ogóle. Po przetłumaczeniu 
+na prostszy w edycji JSON uzyskam super format. 
+
+CzytaćPóźniej:
+
+- https://stackoverflow.com/questions/7665274/gettext-automatic-comments-generation 
+- https://github.com/vslavik/poedit/issues/618
+- https://github.com/vslavik/poedit/issues/752
+- https://github.com/vslavik/poedit/issues/586
+- VS Code -> rvanbekkum.xliff-sync
+- https://github.com/locize/xliff
+- https://github.com/forsatus/Xliff-AI-Translator
+
 
 ## Zakres
 
