@@ -349,6 +349,25 @@ Tymczasem język prymitywny, stworzony przez kosmitów z myślą o sztucznej int
 To właśnie dlatego tradycyjne tłumaczenie słownikowe wygląda tak źle. Dla Google 
 Tłumacza wszystkie przypadki są zamieniane na formę podstawową. Albo Crusader Kings II po polsku. 
 
+### Emoji
+
+Tak sobie myślę i czysto teoretycznie nie ma żadnych przeciwskazań dla użycia 
+pisma obrazkowego zamiast tekstu w normalnym języku. Po dodaniu komentarzy 
+co tu jest podmiotem, orzeczeniem i resztą mógłbym nawet generować polski zaawansowany.
+
+Gdzie się podziały te czasy, gdy Unicode walczył o jak najmniejszą ilość znaków ? 
+Teraz potrzebna jest cała [EmojiPedia](https://emojis.wiki/) by poznać nowo-prostacko-obrazkowy. 
+Jeszcze ostatnio trafiłem na 🪝💦 jako łowienie ryb. Jeszcze trochę i przejdziemy na japoński.
+
+Wracając, z tego co widzę mam tu czasowniki i rzeczowniki. Resztę trzeba wymusić na odbiorcy. 
+Powiedzmy, że miałem tekst idę dalej. Teraz mam 🚶. Ale zamiast poszedłem ? 
+🚶🌅 = 🌅🚶 Może użyję 🔙🚶, a może oznacza to zawróć ? 🚶🔜 czy 🔜🚶 ? 
+Oczywiście zamiast zrobiłem X w przeszłości i teraz wpływa to na Y mam 
+miliardy gender neutralnych identycznych emotek i ich wariacji z kolorami skóry. 
+
+
+### Dalsza część
+
 Niemiecki ma nie tylko odmiany ale również korzysta z nazw łacińskich: 
 
 - Nominative = Mianownik
@@ -410,7 +429,7 @@ Przykłady z: https://multilingual.com/article/201406-42.pdf
  </segment>
  </unit>
 ```
-```xlif
+```xlif2
  <unit id="u123">
  <mtc:matches>
   <mtc:match id="1" ref="#m1" type="mt" origin="MS
@@ -638,6 +657,24 @@ dzielnice1:
     - ff: dd
     - io
 ```
+
+### Rasa i Klasa
+
+Mam to w osobnej notce ale w skrócie. 
+
+U mnie nie ma konceptu klasy. Mam za to wyuczone umiejętności 
+i wiem jak ich użyć do sprawdzenia, czy moja postać ma jedną z nich. 
+
+Wzięło się to z pytania w fazie projektowej "Czy wojownicy mogą korzystać z magii"? 
+Mogłem albo użyć przedmiotu z efektem (alchemia, jednorazowe zwoje) albo zaznaczyć sobie, 
+że postać X poznała najbardziej podstawowy krąg magii.
+
+Podobnie zamiast rasy mam szablony JSON Schema wysyłane przez ludzi. Tyle że opcjonalnie 
+można je napisać w NEONie. Jest tylko jedna zasada: jeśli dodajesz X do umiejętności, 
+musisz zabrać tyle samo z innej. Możesz też używać mnożenia dzielenia albo procentów 
+na tej samej zasadzie. Żeby dało się tego użyć dopuszczalne będzie Y punktów różnicy. 
+Czyli daję +15 do walki mieczem -10 do walki łukiem i sprawdzam, ile maksymalnie 
+punktów mogę przekroczyć. Jak 5 lub więcej to zostaje, jak mniej to propozycja odrzucona.
 
 ## Known problems
 
