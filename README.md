@@ -575,6 +575,92 @@ Wszystkie pliki konfiguracyjne i wszystkie adaptery muszą być zgodne z określ
 
 ## Konfiguracja
 
+### Asciidoc(tor)
+
+```adoc 
+[Rasa]
+[fizycznie]
+wzrost:: 100
+
+[umiejętności]
+siła:: 100
+zręczność:: 100
+
+[zdolności]
+łuk::   +50
+miecz:: -50
+jazda_konna::          *2
+jazda_na_wielbłądzie:: /2
+```
+
+```html
+<div aria-labelledby="toggle1_preview" id="editorPreview">
+    <div class="dlist fizycznie">
+        <dl>
+            <dt>wzrost</dt>
+            <dd>
+                <p>100</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="dlist umiejętności">
+        <dl>
+            <dt>siła</dt>
+            <dd>
+                <p>100</p>
+            </dd>
+            <dt>zręczność</dt>
+            <dd>
+                <p>100</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="dlist zdolności">
+        <dl>
+            <dt>łuk</dt>
+            <dd>
+                <p>+50</p>
+            </dd>
+            <dt>miecz</dt>
+            <dd>
+                <p>-50</p>
+            </dd>
+            <dt>jazda_konna</dt>
+            <dd>
+                <p>*2</p>
+            </dd>
+            <dt>jazda_na_wielbłądzie</dt>
+            <dd>
+                <p>/2</p>
+            </dd>
+        </dl>
+    </div>
+</div>
+```
+
+Trafiłem na to przez przypadek ale to po prostu genialne. 
+Najczytelniejszy format jaki widziałem, niewrażliwy na spacje/taby, obsługuje zmienne i ... waży prawie 1MB. 
+Co prawda od dawien dawna wszyscy powtarzają, by nie mieszać modeli i widoków ale co się może stać ? 
+Tym bardziej, że parser html jest wbudowany wszędzie i jest równie szybki co wczytywanie danych z IndexedDB.
+
+Zgodnie z nowym planem konwerter Asciidoc jest wbudowany w GitHuba. Większość danych będzie nieruchoma 
+na przykład wspomniane rasy i ich bonusy. Więc nie muszę ich parsować po stronie przeglądarki. 
+
+Problemem będą dopiero labirynty. Mając warunki i zmienne mógłbym z łatwością przekazywać dane od serwera. 
+Ale co dalej? Po stronie przeglądarki pobieram skrypt z CDN na konkretnej stronie i gotowe. 
+Gdybym jednak chciał wydać wersję bez JavaScriptu to muszę napisać prosty parser rozumiejący 
+1% specyfikacji. Co doprowadzi do pytań "a czemu to nie działa"? Chyba, że bym oszukiwał i program 
+dzieliłby ify na osobne pliki i w odpowiedniej chwili wczytywał gotowy HTML z dysku. 
+
+Wracając, NEON prawdopodobnie zostanie wyrzucony. A rozwój ruszy do przodu. Użytkownik generuje sobie html, 
+ja przepisuję wszystkie elementy wczytujące dane na WebComponenty. Trafia to do Solida, który oczyszcza 
+kod strony. Wszystkie modele biorą się z jednego miejsca. Zamiast języków ludzkich stosuję emotki i podmieniam 
+z pliku XLIFF na zmienne Asciidoc.
+
+https://blog.adrgautier.co/til-how-to-write-a-web-component-with-solidjs
+
+### Deprecated
+
 Korzystamy z plików [neon](https://github.com/nette/neon).
 
 Jak dla mnie format czytelny dla ludzi:
