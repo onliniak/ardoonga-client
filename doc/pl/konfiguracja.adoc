@@ -1,0 +1,7 @@
+== Konfiguracja
+
+. Znajdź katalog extensions.
+. Utwórz nowy podkatalog o wybranej przez siebie nazwie.
+. Możesz używać Asciidoctor
+.. https://solr.apache.org/guide/8_10/meta-docs/asciidoc-syntax.html
+.. https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/

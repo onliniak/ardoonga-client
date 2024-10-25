@@ -14,11 +14,12 @@
       "isolatedModules": true,
       "paths": {
         "@/*": ["./src/data/*"],
+        "@/doc/*": ["./doc/*"],
         "@/components/*": ["./src/ui/*"],
-        "@/events": ["./src/data/eventsEmitters"],
-        "@/adapters": ["./src/data/adapters"],
-        "@/config": ["./config"],
-        "@/page": ["./src/ui/middle"]
+        "@/events/*": ["./src/data/eventsEmitters/*"],
+        "@/adapters/*": ["./src/data/adapters/*"],
+        "@/config/*": ["./config/*"],
+        "@/page/*": ["./src/ui/middle/*"]
       },
       "removeComments": true
     },

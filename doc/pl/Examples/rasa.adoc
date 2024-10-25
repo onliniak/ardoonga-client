@@ -1,0 +1,13 @@
+[Rasa]
+[fizycznie]
+wzrost:: 100
+
+[umiejętności]
+siła:: 100
+zręczność:: 100
+
+[zdolności]
+łuk::   +50
+miecz:: -50
+jazda_konna::          *2
+jazda_na_wielbłądzie:: /2

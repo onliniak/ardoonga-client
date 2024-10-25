@@ -1,5 +1,7 @@
 # Ardoonga Client
 
+Tu już sam się gubię. Przechodzę do doc/index.adoc
+
 ## Terminal
 
 ### Install
