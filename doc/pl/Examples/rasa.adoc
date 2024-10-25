@@ -1,12 +1,12 @@
-[Rasa]
-[fizycznie]
+[.Rasa]
+[.fizycznie]
 wzrost:: 100
 
-[umiejętności]
+[.umiejętności]
 siła:: 100
 zręczność:: 100
 
-[zdolności]
+[.zdolności]
 łuk::   +50
 miecz:: -50
 jazda_konna::          *2
