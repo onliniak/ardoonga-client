@@ -7,10 +7,16 @@ Wszystko zrobi się automatycznie.
 Zazwyczaj zaczynamy od wybrania rasy i klasy swojej postaci. Dodajmy kilka z nich.
 
 NOTE: Ardoonga nie odróżnia ras i klas. 
-Z punktu widzenia silnika klasy posiadają wiedzę, której nie można zdobyć w inny sposób. Sprawdź dokument <<wiedza>>, jeśli chcesz wiedzieć więcej.
+Z punktu widzenia silnika klasy posiadają wiedzę, której nie można zdobyć w inny sposób. Sprawdź dokument <<doc/pl/wiedza.adoc#Wiedza,wiedza>>, jeśli chcesz wiedzieć więcej.
 
-Ale najpierw zacznijmy od najważniejszego. Gdzie wrzucać swoje pliki i jak je napisać ?
+Ale najpierw zacznijmy od najważniejszego.
 
-include::doc/pl/konfiguracja.adoc[]
+[qanda]
+Gdzie wrzucać swoje pliki ?::
+Utwórz nowy podfolder w folderze extensions.
+Ja nazwę swoje rozszerzenie Archipelag.
+//CAUTION: folder src zawiera pliki odpowiedzialne za działanie programu.
+//Gdzie znajdę ściągawkę jak pisać pliki ?::
+//https://solr.apache.org/guide/8_10/meta-docs/asciidoc-syntax.html
 
 include::doc/pl/rasa.adoc[]

@@ -1,5 +1,91 @@
 == Rasa
 
+W tej sekcji dowiemy się jak:
+
+* Oznaczyć prawa autorskie
+* Dodać nowe umiejętności
+* Określić cechy fizyczne postaci
+* Ograniczyć maksymalną wartość cech i umiejętności
+
+Jeśli chcesz odczytać swoje umiejętności zobacz cośtam cośtam.
+
+=== Przykład GPL
+
+Powiedzmy, że chcę skopiować rasę _Człowiek_ z _Vallheru Engine_.
+
+Zacznijmy od tego, że wszystkie właściwości zapisujemy jako 
+`słowo:: liczba|wyraz`.
+
 ```adoc
-sss
+nazwa:: Człowiek
+```
+
+Wszystkie pliki z _Vallheru_ mają taką notkę: 
+
+```
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+```
+
+```
+@copyright            : (C) 2004,2005,2006,2007,2011,2012 Vallheru Team based on Gamers-Fusion ver 2.5
+ *   @author               : thindil <thindil@vallheru.net>
+ *   @version              : 1.7
+ *   @since                : 15.09.2012
+```
+
+*Można by ją streścić jako:* przeczytaj sobie GNU General Public License w wersji drugiej lub późniejszej. Albo *GPL-2.0-or-later* w skrócie.
+
+W tym przypadku musisz zaznaczyć, która część jest oryginalna, a która została zmieniona przez Ciebie. Możesz użyć do tego sekcji. Służą do tego klamerki | nawiasy kwadratowe `[]`.
+
+```adoc
+[Oryginał]
+nazwa:: Człowiek
+opis:: Ludzie są najbardziej zróżnicowaną i wszechstronną rasą. Są dość wysocy gdyż mierzą około 150 - 190 cm wzrostu lecz są osoby którzy są o wiele wyżsi ale i niżsi. Maja rożną posturę jednak najczęściej są umięśnieni i szczupli. Dzięki tej różnorodności wśród tej rasy mogą być oni wyćwiczeni w każdej dziedzinie. Wielu ludzkich magów pokonało niejednego elfiego maga oraz nie mniej wojowników pokonało wielu krasnoludzkich wojowników. Nie maja określonych najlepszych i najgorszych stron - we wszystkim są dobrzy ale tylko jeśli trenują jedna dziedzinę - inaczej są dobrzy, lecz nie najlepsi. Atutem ludzi jest ich wszechstronność. Najlepszym przykładem są zarówno potężni magowie jak i wojownicy. Należą oni do najbardziej zuchwałych i ambitnych ras. Najczęściej walczą dla bogactwa i sławy niźli dla osobistego kształtowania swych umiejętności. Ludzie jako rasa najlepiej przyswajają nową wiedze, toteż szybko staja się potężni. Nie są wrogo nastawieni do innych w przeciwieństwie do krasnoludów i elfów. Są także uznawani za najbardziej ekscentryczną z ras, znów z powodu ich różnorodności. Ludzie są najlepsza rasa gdyż potrafią przystosować się do każdego środowiska w szybkim czasie i dlatego tez szybko uczą się wybranej przez siebie profesji.
+
+$arrStats = array(3, 3, 3, 3, 3, 3, 4);
+	$arrMaxstats = array(50, 50, 50, 50, 50, 50, '');
+     "Tstats" => array('do siły, maksymalna wartość cechy:', 'do zręczności, maksymalna wartość cechy:', 'do kondycji, maksymalna wartość cechy:', 'do szybkości, maksymalna wartość cechy:', 'do inteligencji, maksymalna wartość cechy:', 'do siły woli, maksymalna wartość cechy:', 'punktów życia za każdy zdobyty poziom cechy Kondycja'),
+//"Tutaj możesz wybrać rasę swojej postaci. Każda rasa ma swoje plusy i minusy (ich opis znajdziesz po kliknięciu w link). Zastanów się dobrze, ponieważ poźniej nie będziesz już mógł zmienić swojej rasy."
+```
+
+```
+[klasa]
+ case 'barbarzynca':
+	$strClass = "<i>Byłeś wspaniałym przeciwnikiem! Wspomnę twe imię gdy podczas uczt będę pił najlepsze trunki z twej czaszki!</i><br />Gdyby wojownika nazwać synem wojny, barbarzyńcę trzeba by było nazwać jej mężem. Z dalekich i dzikich miejsc całego Vallheru u bram ".$city1b." pojawili się barbarzyńcy, głodni bogactw oraz sławy. Ich domem jest pole bitwy, ich językiem dźwięk wydawany przez broń w momencie ataku. Są najbardziej nieokrzesaną grupą obywateli wśród mieszkańców Vallheru. Nie cierpią magii ani jakiejkolwiek pomocy ze strony magów, uważają iż o chwale barbarzyńcy decyduje on sam a nie jakieś nieznane moce. Unikają przez to jakiejkolwiek formy magii czy to czarów czy magicznych broni. Jednak owa niechęć sprawia, iż są bardziej odporni na działania uroków niż inne kasty mieszkańców. Owe uprzedzenia do magów wywołały już kilka potężnych bitew z magami. Na ślady owych walk można natknąć się czasami, podróżując po bezdrożach Vallheru. Najwięcej barbarzyńców można spotkać pośród Jaszczuroludzi, najmniej - pośród Hobbitów. Ich główną domeną jest walka, lecz podobnie jak wojownicy jako tako radzą sobie również z kowalstwem czy stolarstwem. Niezależnie czy barbarzyńcą jest Krasnolud czy Człowiek, kasta ta ma takie same cechy<br />Cechy Barbarzyńcy<ul><li>Premia do umiejętności ataku oraz uniku w wysokości 1/10 danej umiejętności</li><li>Premia do odporności na magię w wysokości 1/2 poziomu siły woli</li><li>Możesz używać dwóch broni jednoręcznych na raz</li><li>Barbarzyńcy nie mogą używać ani czarów ani przedmiotów magicznych - mogą nosić je w plecaku ale nie mogą ich zakładać</li><li>W trakcie walki turowej mogą używać ataków ofensywnych";
+	$arrStats = array(1, 1, 1, 0, -1, 1, 5);
+
+    case 'wojownik':
+	    $player->clas = 'Wojownik';
+	    $strClas2 = 'kastę wojowników';
+	    break;
+	  case 'mag':
+	    $player->clas = 'Mag';
+	    $strClas2 = 'kastę magów';
+	    break;
+	  case 'craftsman':
+	    $player->clas = 'Rzemieślnik';
+	    $strClas2 = 'kastę rzemieślników';
+	    break;
+	  case 'barbarzynca':
+	    $player->clas = 'Barbarzyńca';
+	    $strClas2 = 'drogę barbarzyńcy';
+	    break;
+	  case 'zlodziej':
+	    $player->clas = 'Złodziej';
+	    $strClas2 = 'ścieżkę złodzieja';
+	    break;
+
+        "Tstats" => array('do siły', 'do zręczności', 'do kondycji', 'do szybkości', 'do inteligencji', 'do siły woli', 'punktów życia za każdy zdobyty poziom Kondycji'),
 ```
