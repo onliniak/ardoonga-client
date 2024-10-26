@@ -9,6 +9,10 @@ W tej sekcji dowiemy się jak:
 
 Jeśli chcesz odczytać swoje umiejętności zobacz cośtam cośtam.
 
+//https://www.dndbeyond.com/sources/dnd/basic-rules-2014 ← Z tego na 100% mogę korzystać
+//https://www.dndbeyond.com/sources/dnd/free-rules ← Nie mam pewności, czy mogę.
+
+
 Folder:
 
 * extensions
