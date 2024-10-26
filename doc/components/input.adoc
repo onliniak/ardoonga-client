@@ -1,0 +1,39 @@
+++++
+<label for="{name}">{label}</label>
+<input type="{type}" 
+name="{name}" 
+ifndef::optional[] required endif::[]
+
+ifdef::min[] 
+
+ifeval::[{type} != "number"]
+minlength="{min}" 
+endif::[]
+ifeval::[{type} != "text"]
+min="{min}" 
+endif::[]
+
+endif::[]
+
+ifdef::max[] 
+
+ifeval::[{type} != "number"]
+maxlength="{max}" 
+endif::[]
+ifeval::[{type} != "text"]
+max="{max}" 
+endif::[]
+
+endif::[]
+
+ifdef::pattern[]
+pattern="{pattern}" 
+endif::[]
+
+ifdef::readonly[]
+readonly 
+endif::[]
+
+spellcheck=true
+size="{size}" />
+++++
