@@ -9,16 +9,24 @@ W tej sekcji dowiemy się jak:
 
 Jeśli chcesz odczytać swoje umiejętności zobacz cośtam cośtam.
 
+Folder:
+
+* extensions
+** player
+*** new
+
 === Przykład GPL
 
 Powiedzmy, że chcę skopiować rasę _Człowiek_ z _Vallheru Engine_.
 
+CAUTION: Thindil był znanym gnomo-fobem.
+W jego królestwie używano ich jako tarcz i 
+dzień w dzień powtarzano krasnoludzką propagandę. 
+
 Zacznijmy od tego, że wszystkie właściwości zapisujemy jako 
 `słowo:: liczba|wyraz`.
 
-```adoc
-nazwa:: Człowiek
-```
+Tworzę plik *człowiek.adoc* w *extensions/Archipelag/player/new/człowiek.adoc*
 
 Wszystkie pliki z _Vallheru_ mają taką notkę: 
 
@@ -47,16 +55,64 @@ Wszystkie pliki z _Vallheru_ mają taką notkę:
 
 *Można by ją streścić jako:* przeczytaj sobie GNU General Public License w wersji drugiej lub późniejszej. Albo *GPL-2.0-or-later* w skrócie.
 
-W tym przypadku musisz zaznaczyć, która część jest oryginalna, a która została zmieniona przez Ciebie. Możesz użyć do tego sekcji. Służą do tego klamerki | nawiasy kwadratowe `[]`.
+W tym przypadku musisz zaznaczyć, która część jest oryginalna, a która została zmieniona przez Ciebie. Możesz użyć do tego sekcji. Służą do tego klamerki | nawiasy kwadratowe `[#nazwa]`.
+
+Dobrym pomysłem jest przepisanie oryginalnego autora, nazwy jego projektu i ewentualnych dodatkowych informacji. 
+Piszę więc:
 
 ```adoc
-[Oryginał]
-nazwa:: Człowiek
+[#Original author]
+author:: thindil <thindil@vallheru.net>
+since:: 15.09.2012
+copyright:: Vallheru Team based on Gamers-Fusion ver 2.5
+project:: Vallheru Engine <https://github.com/Vallheru/vallheru-engine>
+```
+
+Jeśli wprowadzam jakiekolwiek zmiany, oprócz przepisaniem informacji to piszę:
+
+```adoc
+[#Original author]
+author:: thindil <thindil@vallheru.net>
+since:: 15.09.2012
+copyright:: Vallheru Team based on Gamers-Fusion ver 2.5
+project:: Vallheru Engine <https://github.com/Vallheru/vallheru-engine>
+[#Contributor]
+author:: Ja <moj@e.mail>
+since:: dziś
+changelog: Dodałem nową statystykę, 
+Usunąłem maksymalny wzrost postaci,
+czy coś takiego.
+```
+
+Ale wróćmy do przepisywania rasy:
+
+[TIP]
+====
+Ardoonga Engine nie narzuca określonych nazw ale wymaga stosowania poniższych przedrostków i końcówek:
+
+* max_NAZWA
+* min_NAZWA
+* regex_NAZWA
+====
+
+```adoc
 opis:: Ludzie są najbardziej zróżnicowaną i wszechstronną rasą. Są dość wysocy gdyż mierzą około 150 - 190 cm wzrostu lecz są osoby którzy są o wiele wyżsi ale i niżsi. Maja rożną posturę jednak najczęściej są umięśnieni i szczupli. Dzięki tej różnorodności wśród tej rasy mogą być oni wyćwiczeni w każdej dziedzinie. Wielu ludzkich magów pokonało niejednego elfiego maga oraz nie mniej wojowników pokonało wielu krasnoludzkich wojowników. Nie maja określonych najlepszych i najgorszych stron - we wszystkim są dobrzy ale tylko jeśli trenują jedna dziedzinę - inaczej są dobrzy, lecz nie najlepsi. Atutem ludzi jest ich wszechstronność. Najlepszym przykładem są zarówno potężni magowie jak i wojownicy. Należą oni do najbardziej zuchwałych i ambitnych ras. Najczęściej walczą dla bogactwa i sławy niźli dla osobistego kształtowania swych umiejętności. Ludzie jako rasa najlepiej przyswajają nową wiedze, toteż szybko staja się potężni. Nie są wrogo nastawieni do innych w przeciwieństwie do krasnoludów i elfów. Są także uznawani za najbardziej ekscentryczną z ras, znów z powodu ich różnorodności. Ludzie są najlepsza rasa gdyż potrafią przystosować się do każdego środowiska w szybkim czasie i dlatego tez szybko uczą się wybranej przez siebie profesji.
 
-$arrStats = array(3, 3, 3, 3, 3, 3, 4);
-	$arrMaxstats = array(50, 50, 50, 50, 50, 50, '');
-     "Tstats" => array('do siły, maksymalna wartość cechy:', 'do zręczności, maksymalna wartość cechy:', 'do kondycji, maksymalna wartość cechy:', 'do szybkości, maksymalna wartość cechy:', 'do inteligencji, maksymalna wartość cechy:', 'do siły woli, maksymalna wartość cechy:', 'punktów życia za każdy zdobyty poziom cechy Kondycja'),
+siła:: 3
+zręczność:: 3
+kondycja:: 3
+szybkość:: 3
+inteligencja:: 3
+siła_woli:: 3
+
+max_siła:: 50
+max_zręczność:: 50
+max_kondycja:: 50
+max_szybkość:: 50
+max_inteligencja:: 50
+max_siła_woli:: 50
+punkty_życia_za_każdy_punkt_kondycji:: 4
+
 //"Tutaj możesz wybrać rasę swojej postaci. Każda rasa ma swoje plusy i minusy (ich opis znajdziesz po kliknięciu w link). Zastanów się dobrze, ponieważ poźniej nie będziesz już mógł zmienić swojej rasy."
 ```
 
