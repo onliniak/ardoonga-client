@@ -13,7 +13,7 @@
     },
     "license": "MPL-2.0",
     "devDependencies": {
-        "@eslint/js": "^9.11.1",
+        "@eslint/js": "^9.13.0",
         "@solidjs/testing-library": "^0.8.9",
         "@testing-library/jest-dom": "^6.5.0",
         "@testing-library/user-event": "^14.5.2",
@@ -23,6 +23,7 @@
         "eslint-plugin-solid": "^0.14.3",
         "eslint-plugin-vitest": "^0.5.4",
         "fake-indexeddb": "^6.0.0",
+        "file-entry-cache": "^10.0.0",
         "globals": "^15.9.0",
         "jsdom": "^25.0.0",
         "mini.css": "^3.0.1",
