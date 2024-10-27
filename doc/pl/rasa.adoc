@@ -269,7 +269,8 @@ https://www.gnu.org/software/emacs/manual/html_node/elisp/Conditionals.html
 
 W porównaniu z tym czymś poniżej wersja tekstowa wydaje się o wiele czytelniejsza. 
 Ale skorzystanie z wersji tekstowej wymusza stosowanie https://pl.wikipedia.org/wiki/Notacja_polska[Notacji Łukasiewicza] 
-a`la lisp ```
+a`la lisp 
+```
 „podziel	siedem	przez sumę	dwu	i trzech”
 /	7	+	2	3
 ```
