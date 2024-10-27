@@ -4,6 +4,8 @@ Ardoonga pomoże Ci stworzyć internetową tekstową grę RPG.
 Nie musisz konfigurować żadnych serwerów, ani za nic płacić. 
 Wszystko zrobi się automatycznie.
 
+CAUTION: Niestabilne. Wszystko co tu pisze może się zmienić w każdej chwili.
+
 Zazwyczaj zaczynamy od wybrania rasy i klasy swojej postaci. Dodajmy kilka z nich.
 
 NOTE: Ardoonga nie odróżnia ras i klas. 
