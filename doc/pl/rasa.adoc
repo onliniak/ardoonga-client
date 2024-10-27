@@ -9,17 +9,13 @@ W tej sekcji dowiemy się jak:
 
 Jeśli chcesz odczytać swoje umiejętności zobacz cośtam cośtam.
 
-//https://www.dndbeyond.com/sources/dnd/basic-rules-2014 ← Z tego na 100% mogę korzystać
-//https://www.dndbeyond.com/sources/dnd/free-rules ← Nie mam pewności, czy mogę.
-
-
 Folder:
 
 * extensions
 ** player
 *** new
 
-=== Przykład GPL
+=== Kopiowanie rasy z Vallheru Engine [Licencja GPL]
 
 Powiedzmy, że chcę skopiować rasę _Człowiek_ z _Vallheru Engine_.
 
@@ -28,9 +24,11 @@ W jego królestwie używano ich jako tarcz i
 dzień w dzień powtarzano krasnoludzką propagandę. 
 
 Zacznijmy od tego, że wszystkie właściwości zapisujemy jako 
-`słowo:: liczba|wyraz`.
+`słowo:: liczba|wyraz`. ++++ <br /> ++++
+Jeśli chcesz, by postać coś wiedziała napisz `słowo:: true`, 
+a jeśli chcesz czegoś zabronić napisz `słowo:: false`
 
-Tworzę plik *człowiek.adoc* w *extensions/Archipelag/player/new/człowiek.adoc*
+Tworzę plik *człowiek.adoc* w *extensions/Archipelag/player/new/_race_/człowiek.adoc*
 
 Wszystkie pliki z _Vallheru_ mają taką notkę: 
 
@@ -57,9 +55,12 @@ Wszystkie pliki z _Vallheru_ mają taką notkę:
  *   @since                : 15.09.2012
 ```
 
-*Można by ją streścić jako:* przeczytaj sobie GNU General Public License w wersji drugiej lub późniejszej. Albo *GPL-2.0-or-later* w skrócie.
+*Można by ją streścić jako:* przeczytaj sobie GNU General Public License w wersji drugiej lub późniejszej.
 
 W tym przypadku musisz zaznaczyć, która część jest oryginalna, a która została zmieniona przez Ciebie. Możesz użyć do tego sekcji. Służą do tego klamerki | nawiasy kwadratowe `[#nazwa]`.
+
+TIP:: Wszystkie klony Vallheru muszą zostać opublikowane pod tą samą licencją, co oznacza że możesz swobodnie 
+kopiować na przykład Orodlina.
 
 Dobrym pomysłem jest przepisanie oryginalnego autora, nazwy jego projektu i ewentualnych dodatkowych informacji. 
 Piszę więc:
@@ -70,9 +71,10 @@ author:: thindil <thindil@vallheru.net>
 since:: 15.09.2012
 copyright:: Vallheru Team based on Gamers-Fusion ver 2.5
 project:: Vallheru Engine <https://github.com/Vallheru/vallheru-engine>
+license:: GPL-2.0-or-later <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>
 ```
 
-Jeśli wprowadzam jakiekolwiek zmiany, oprócz przepisaniem informacji to piszę:
+Jeśli wprowadzam jakiekolwiek zmiany, oprócz przepisania informacji to piszę:
 
 ```adoc
 [#Original author]
@@ -80,6 +82,7 @@ author:: thindil <thindil@vallheru.net>
 since:: 15.09.2012
 copyright:: Vallheru Team based on Gamers-Fusion ver 2.5
 project:: Vallheru Engine <https://github.com/Vallheru/vallheru-engine>
+license:: GPL-2.0-or-later <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>
 [#Contributor]
 author:: Ja <moj@e.mail>
 since:: dziś
@@ -92,12 +95,14 @@ Ale wróćmy do przepisywania rasy:
 
 [TIP]
 ====
-Ardoonga Engine nie narzuca określonych nazw ale wymaga stosowania poniższych przedrostków i końcówek:
+Ardoonga Engine nie narzuca określonych nazw ale wymaga stosowania poniższych przedrostków:
 
 * max_NAZWA
 * min_NAZWA
 * regex_NAZWA
 ====
+
+//"Tutaj możesz wybrać rasę swojej postaci. Każda rasa ma swoje plusy i minusy (ich opis znajdziesz po kliknięciu w link). Zastanów się dobrze, ponieważ poźniej nie będziesz już mógł zmienić swojej rasy."
 
 ```adoc
 opis:: Ludzie są najbardziej zróżnicowaną i wszechstronną rasą. Są dość wysocy gdyż mierzą około 150 - 190 cm wzrostu lecz są osoby którzy są o wiele wyżsi ale i niżsi. Maja rożną posturę jednak najczęściej są umięśnieni i szczupli. Dzięki tej różnorodności wśród tej rasy mogą być oni wyćwiczeni w każdej dziedzinie. Wielu ludzkich magów pokonało niejednego elfiego maga oraz nie mniej wojowników pokonało wielu krasnoludzkich wojowników. Nie maja określonych najlepszych i najgorszych stron - we wszystkim są dobrzy ale tylko jeśli trenują jedna dziedzinę - inaczej są dobrzy, lecz nie najlepsi. Atutem ludzi jest ich wszechstronność. Najlepszym przykładem są zarówno potężni magowie jak i wojownicy. Należą oni do najbardziej zuchwałych i ambitnych ras. Najczęściej walczą dla bogactwa i sławy niźli dla osobistego kształtowania swych umiejętności. Ludzie jako rasa najlepiej przyswajają nową wiedze, toteż szybko staja się potężni. Nie są wrogo nastawieni do innych w przeciwieństwie do krasnoludów i elfów. Są także uznawani za najbardziej ekscentryczną z ras, znów z powodu ich różnorodności. Ludzie są najlepsza rasa gdyż potrafią przystosować się do każdego środowiska w szybkim czasie i dlatego tez szybko uczą się wybranej przez siebie profesji.
@@ -116,36 +121,144 @@ max_szybkość:: 50
 max_inteligencja:: 50
 max_siła_woli:: 50
 punkty_życia_za_każdy_punkt_kondycji:: 4
-
-//"Tutaj możesz wybrać rasę swojej postaci. Każda rasa ma swoje plusy i minusy (ich opis znajdziesz po kliknięciu w link). Zastanów się dobrze, ponieważ poźniej nie będziesz już mógł zmienić swojej rasy."
 ```
 
-```
-[klasa]
- case 'barbarzynca':
-	$strClass = "<i>Byłeś wspaniałym przeciwnikiem! Wspomnę twe imię gdy podczas uczt będę pił najlepsze trunki z twej czaszki!</i><br />Gdyby wojownika nazwać synem wojny, barbarzyńcę trzeba by było nazwać jej mężem. Z dalekich i dzikich miejsc całego Vallheru u bram ".$city1b." pojawili się barbarzyńcy, głodni bogactw oraz sławy. Ich domem jest pole bitwy, ich językiem dźwięk wydawany przez broń w momencie ataku. Są najbardziej nieokrzesaną grupą obywateli wśród mieszkańców Vallheru. Nie cierpią magii ani jakiejkolwiek pomocy ze strony magów, uważają iż o chwale barbarzyńcy decyduje on sam a nie jakieś nieznane moce. Unikają przez to jakiejkolwiek formy magii czy to czarów czy magicznych broni. Jednak owa niechęć sprawia, iż są bardziej odporni na działania uroków niż inne kasty mieszkańców. Owe uprzedzenia do magów wywołały już kilka potężnych bitew z magami. Na ślady owych walk można natknąć się czasami, podróżując po bezdrożach Vallheru. Najwięcej barbarzyńców można spotkać pośród Jaszczuroludzi, najmniej - pośród Hobbitów. Ich główną domeną jest walka, lecz podobnie jak wojownicy jako tako radzą sobie również z kowalstwem czy stolarstwem. Niezależnie czy barbarzyńcą jest Krasnolud czy Człowiek, kasta ta ma takie same cechy<br />Cechy Barbarzyńcy<ul><li>Premia do umiejętności ataku oraz uniku w wysokości 1/10 danej umiejętności</li><li>Premia do odporności na magię w wysokości 1/2 poziomu siły woli</li><li>Możesz używać dwóch broni jednoręcznych na raz</li><li>Barbarzyńcy nie mogą używać ani czarów ani przedmiotów magicznych - mogą nosić je w plecaku ale nie mogą ich zakładać</li><li>W trakcie walki turowej mogą używać ataków ofensywnych";
-	$arrStats = array(1, 1, 1, 0, -1, 1, 5);
+=== Kopiowanie klasy z Vallheru Engine
 
-    case 'wojownik':
-	    $player->clas = 'Wojownik';
-	    $strClas2 = 'kastę wojowników';
-	    break;
-	  case 'mag':
-	    $player->clas = 'Mag';
-	    $strClas2 = 'kastę magów';
-	    break;
-	  case 'craftsman':
-	    $player->clas = 'Rzemieślnik';
-	    $strClas2 = 'kastę rzemieślników';
-	    break;
-	  case 'barbarzynca':
-	    $player->clas = 'Barbarzyńca';
-	    $strClas2 = 'drogę barbarzyńcy';
-	    break;
-	  case 'zlodziej':
-	    $player->clas = 'Złodziej';
-	    $strClas2 = 'ścieżkę złodzieja';
-	    break;
+Powiedzmy, że chcę skopiować klasę _Barbarzyńca_ z _Vallheru Engine_.
 
-        "Tstats" => array('do siły', 'do zręczności', 'do kondycji', 'do szybkości', 'do inteligencji', 'do siły woli', 'punktów życia za każdy zdobyty poziom Kondycji'),
+Tworzę plik *barbarzyńca.adoc* w *extensions/Archipelag/player/new/_class_/barbarzyńca.adoc*
+
+//    case 'wojownik':
+//	    $player->clas = 'Wojownik';
+//	    $strClas2 = 'kastę wojowników';
+//	    break;
+//	  case 'mag':
+//	    $player->clas = 'Mag';
+//	    $strClas2 = 'kastę magów';
+//	    break;
+//	  case 'craftsman':
+//	    $player->clas = 'Rzemieślnik';
+//	    $strClas2 = 'kastę rzemieślników';
+//	    break;
+//	  case 'barbarzynca':
+//	    $player->clas = 'Barbarzyńca';
+//	    $strClas2 = 'drogę barbarzyńcy';
+//	    break;
+//	  case 'zlodziej':
+//	    $player->clas = 'Złodziej';
+//	    $strClas2 = 'ścieżkę złodzieja';
+//	    break;
+
+```adoc
+opis:: "<i>Byłeś wspaniałym przeciwnikiem! Wspomnę twe imię gdy podczas uczt będę pił najlepsze trunki z twej czaszki!</i><br />Gdyby wojownika nazwać synem wojny, barbarzyńcę trzeba by było nazwać jej mężem. Z dalekich i dzikich miejsc całego Vallheru u bram ".$city1b." pojawili się barbarzyńcy, głodni bogactw oraz sławy. Ich domem jest pole bitwy, ich językiem dźwięk wydawany przez broń w momencie ataku. Są najbardziej nieokrzesaną grupą obywateli wśród mieszkańców Vallheru. Nie cierpią magii ani jakiejkolwiek pomocy ze strony magów, uważają iż o chwale barbarzyńcy decyduje on sam a nie jakieś nieznane moce. Unikają przez to jakiejkolwiek formy magii czy to czarów czy magicznych broni. Jednak owa niechęć sprawia, iż są bardziej odporni na działania uroków niż inne kasty mieszkańców. Owe uprzedzenia do magów wywołały już kilka potężnych bitew z magami. Na ślady owych walk można natknąć się czasami, podróżując po bezdrożach Vallheru. Najwięcej barbarzyńców można spotkać pośród Jaszczuroludzi, najmniej - pośród Hobbitów. Ich główną domeną jest walka, lecz podobnie jak wojownicy jako tako radzą sobie również z kowalstwem czy stolarstwem. Niezależnie czy barbarzyńcą jest Krasnolud czy Człowiek, kasta ta ma takie same cechy<br />Cechy Barbarzyńcy<ul><li>Premia do umiejętności ataku oraz uniku w wysokości 1/10 danej umiejętności</li><li>Premia do odporności na magię w wysokości 1/2 poziomu siły woli</li><li>Możesz używać dwóch broni jednoręcznych na raz</li><li>Barbarzyńcy nie mogą używać ani czarów ani przedmiotów magicznych - mogą nosić je w plecaku ale nie mogą ich zakładać</li><li>W trakcie walki turowej mogą używać ataków ofensywnych";
+
+[#Cechy]
+atak::   *1.1
+obrona:: *1.1
+obrona_magia:: 0.5*siła_woli
+
+[#Wiedza]
+dwie_bronie_jednoręczne:: true
+magia:: false
+magiczne_przedmioty:: false
+
+[#Wiedza walka turowa]
+atak_ofensywny:: true
+
+[#Zdolności]
+siła:: 1
+zręczność:: 1
+kondycja:: 1
+szybkość:: 0
+inteligencja:: -1
+siła_woli:: 1
+punkty_życia_za_każdy_punkt_kondycji:: 5
 ```
+TODO: Tutaj dodać dlaczego tak jest.
+
+=== Kopiowanie rasy z Dungeons & Dragons [Licencja OGL]
+
+==== Teoria własności korporacyjnej
+
+Pliki są w tych samych folderach co powyżej. Różni się nowo-mową prawniczą.
+
+GPL zachęca do zapoznania się z poglądami ich guru. Zmusza też ludzi do używania ich licencji w klonach gier. 
+Ale w praktyce opiera się na "wolności wszystkich ludzi". Więc o ile nie zapomnisz o podaniu licencji, autorów i swoich zmian, 
+możesz spokojnie kopiować co chcesz.
+
+Open Game License mówi, że wszystkie prawa należą do korporacji. Twierdzi też, że w interesie Korporacji jest robienie sobie darmowej reklamy. Ogranicza więc swoje prawa autorskie do wybranych dokumentów.
+
+*A po naszemu → kopiowanie _statystyk, umiejętności, ekwipunku początkowego_ z https://www.dndbeyond.com/sources/dnd/basic-rules-2014[podstawowych zasad 2014] jest dozwolone. _NIE DOTYCZY to_ opisów i zdjęć_*.
+
+Korporacja powtarza wszystkie dokumenty, które *definitywnie są zabronione* do kopiowania, tłumaczenia i przepisywania jak:
+
+Dungeons & Dragons, D&D, Player’s Handbook, Dungeon Master, Monster Manual, d20 System, Wizards of the Coast, Forgotten Realms, Faerûn, proper names (including those used in the names of spells or items), places, Underdark, Red Wizard of Thay, the City of Union, Heroic Domains of Ysgard, EverChanging Chaos of Limbo, Windswept Depths of Pandemonium, Infinite Layers of the Abyss, Tarterian Depths of Carceri, Gray Waste of Hades, Bleak Eternity of Gehenna, Nine Hells of Baator, Infernal Battlefield of Acheron, Clockwork Nirvana of Mechanus, Peaceable Kingdoms of Arcadia, Seven Mounting Heavens of Celestia, Twin Paradises of Bytopia, Blessed Fields of Elysium, Wilderness of the Beastlands, Olympian Glades of Arborea, Concordant Domain of the Outlands, Sigil, Lady of Pain, Book of Exalted Deeds, Book of Vile Darkness, beholder, gauth, carrion crawler, tanar’ri, baatezu, displacer beast, githyanki, githzerai, mind flayer, illithid, umber hulk, yuan-ti.
+
+Chwilowo zignorujemy film Elysium, księżniczkę Celestię i chyba widziałem gdzieś displacer beast.
+
+Jeśli zignorujesz prawa, o których nie masz pojęcia to naślą na Ciebie swoich prawników po 30 dniach. 
+Jeśli Twój Rząd odważy się wprowadzić prawo, które nie jest im na rękę to naślą na Ciebie swoich prawników.
+
+// (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the OPEN Game Content;
+
+Zapytałem Wyrocznię (ChatGPT):
+
+```
+Yes, you can use content from the Dungeons & Dragons (D&D) Basic Rules under the Open Game License (OGL), but there are specific guidelines you need to follow. The OGL allows for the use of certain game mechanics and content, but you must ensure that you properly attribute the source and comply with the terms of the license.
+
+To use race descriptions, you should:
+
+Confirm that the specific content you wish to use is covered by the OGL.
+Provide appropriate credit to the original source.
+Avoid using any proprietary content that is not included in the OGL.
+For the most accurate and detailed information, it's best to refer to the actual text of the OGL and any related documentation provided by Wizards of the Coast.
+```
+
+Noi teraz strona 26 SRD_OGL używa nazwy Ki. 
+
+Tak na chłopski rozum powinna być nazwą zastrzeżoną. 
+Ale jeśli znajdę 100 świadków, którzy potwierdzą przed sądem, że 
+widzieli to na własne oczy na wspomnianej stronie wspomnianego PDFa.
+I jeśli dostarczę dowodów na 100 stron A4 minimum, że SRD_OGL oznacza
+"treść zgodną z OGL w zamyśle Korporacji" to być może mogę użyć jej legalnie.
+
+Jeszcze zapomniałem dopisać, że nie mam licencji prawniczej i tak dalej. 
+
+==== Kopiowanie klasy z Dungeons & Dragons [Licencja OGL]
+
+Powiedzmy, że chcę popełnić piractwo najwyższego poziomu i skopiować sobie klasę mnicha.
+
+Dodaję plik *mnich.adoc* do *extensions/Archipelag/player/new/_class_/mnich.adoc*
+
+```adoc
+[#Original author]
+copyright:: Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
+System Reference Document Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
+
+project:: Basic Rules | Dungeons and Dragons | System Reference
+Document 5.1 Page 26 | Open Gaming License, Version 1.0a. <https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>
+
+license:: OGL-1.0-a <https://opengamingfoundation.org/ogl.html>
+
+[#Cechy]
+hit_dice:: 1d8 / lvl
+punkty_życia_poziom_1:: 8 + Constitution
+punkty_życia:: 1d8 + (Constitution / lvl)
+
+[#Wiedza]
+zbroja:: false
+bronie:: proste || krótkie_miecze
+narzędzia:: 1x rzemieślnicze || 1x instrument_muzyczny
+umiejętności:: 2x from Acrobatics, Athletics, History, Insight, Religion, Stealth
+ekwipunek:: krótki_miecz || prosta_broń && paczka_odkrywcy || paczka_lochy 
+&& 10x rzutki
+unarmored_defense:: true from 1 lvl
+martial_arts:: true from 2 lvl
+ki:: true from 2 lvl
+deflect_missiles: true from 3 lvl
+```
+
+AUTHOR: W przeciwieństwie do Vallheru, które zostało uproszczone dla przeglądarek 
+DnD posiada dość skomplikowane wymagania. Jeszcze muszę pomyśleć jak to najlepiej 
+przedstawić, by było czytelne i dla ludzi i dla komputera.
