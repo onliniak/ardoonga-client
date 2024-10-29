@@ -262,14 +262,21 @@ deflect_missiles: true from 3 lvl
 ```
 
 Niestety, Vallheru zostało specjalnie uproszczone dla potrzeb internetu. 
-Jeśli chcesz przenieść DnD musisz znać sztukę programowania w pseudo-Clojure na zaawansowanym poziomie. 
+Jeśli chcesz przenieść DnD musisz znać sztukę programowania w pseudo-Lisp na zaawansowanym poziomie. 
 ALBO kopiuj i wklejaj, aż wyjdzie to czego oczekujesz.
 
 [source,clojure]
 ----
 case lvl <1>
-1 <2> <3> + <5> 8, Constitution <6>
-else <4> + <5> 1d8 / Constitution, lvl <7>
+1 <2> <3>
++ <5>
+
+case lvl 1 + 8, Constitution <6>
+
+else <4>
++ <5>
+
+else + 1d8 / Constitution, lvl <7>
 ----
 <1> case oznacza wybór
 <2> Pierwszy znak oznacza kiedy coś ma się wydarzyć
@@ -312,23 +319,56 @@ TIP: Możesz stawiać spacje w dowolnym miejscu. Czasem pomaga z czytelnością.
 Dlaczego stosuję notację Łukasiewicza?
 
 Tak mi było łatwiej z przepisaniem tego dla komputera. 
-Zresztą 
-standardowy język matematyki zajmuje za dużo miejsca.
-
-Porównaj z:
 
 ```ruby
+case lvl when 1 8 + Constitution else 1d8 + (Constitutution / lvl)
+```
+
+```adoc
+HP::
 case lvl
-when 1 
-8 + Constitution
-else
-1d8 + (Constitution / lvl)
+* 1
+** 8
+*** +
+**** Constitution
+* else
+** 1d8
+*** +
+**** ( Constitution / lvl)
 ```
 
 ```ruby
-case lvl when 1 8 +Constitution else 1d8+(Constitutution/lvl)
+case lvl when 1 + 8, Constitution else + 1d8 / Constitution, lvl
 ```
 
-```ruby
-case lvl 1 + 8, Constitution else + 1d8 / Constitution, lvl
+```adoc
+HP::
+case lvl
+* 1
+** +
+*** 8
+*** Constitution
+* else
+** +
+*** 1d8
+*** /
+**** Constitution
+**** lvl
 ```
+
+W prostszych przykładach tego nie widać ale ta dziwna wersja jasno określa mi co mam zrobić. 
+Dodaj 1d8 do wyniku dzielenia zmiennych Constitution i lvl.
+
+Zamiast:
+
+. dodaj 
+. czekaj
+. wejdź do nawiasu
+. oblicz nawias
+. przypisz tymczasową zmienną do wyniku z poprzedniego kroku
+. wróć do dodawania
+. kontynuuj dodawanie 8 do tymczasowej zmiennej
+
+Tak właściwie zastanawiam się czy by nie wprowadzić eksperymentalnej wersji, w której 
+piszesz po polskiemu, a program wyrzuca mój zapis matematyczny. Który potem przerabia 
+sobie i tak na instrukcję krok po kroku i pracuje na niej.
