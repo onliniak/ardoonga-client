@@ -177,7 +177,7 @@ punkty_życia_za_każdy_punkt_kondycji:: 5
 ```
 TODO: Tutaj dodać dlaczego tak jest.
 
-=== Kopiowanie rasy z Dungeons & Dragons
+=== Kopiowanie treści z Dungeons & Dragons
 
 Akurat z DnD jest o tyle dobrze, że mają *SRD*, czyli PDF z którego możesz kopiować co tylko chcesz. Musisz tylko podać link do PDFa, numer strony i skopiować COPYRIGHT (NOTE) w całości.
 
@@ -309,7 +309,8 @@ Wygląda skomplikowanie, bo nie potrafię tłumaczyć ani na ludzki, ani na mate
 
 TIP: Możesz stawiać spacje w dowolnym miejscu. Czasem pomaga z czytelnością.
 
-Dlaczego stosuję notację Łukasiewicza?:
+Dlaczego stosuję notację Łukasiewicza?
+
 Tak mi było łatwiej z przepisaniem tego dla komputera. 
 Zresztą 
 standardowy język matematyki zajmuje za dużo miejsca.
@@ -328,6 +329,6 @@ else
 case lvl when 1 8 +Constitution else 1d8+(Constitutution/lvl)
 ```
 
-```Clojure
+```ruby
 case lvl 1 + 8, Constitution else + 1d8 / Constitution, lvl
 ```
