@@ -281,7 +281,7 @@ else + 1d8 / Constitution, lvl <7>
 <1> case oznacza wybór
 <2> Pierwszy znak oznacza kiedy coś ma się wydarzyć
 <3> case 1 czytamy jako kiedy lvl (poziom mnicha) jest równy 1
-<4> W Clojure znaki matematyczne są pierwsze, a argumenty funkcji następne.
+<4> W Lisp znaki matematyczne są pierwsze, a argumenty funkcji następne.
 Czytamy to jako *dodaj* coś do czegoś
 <5> Jeśli poziom mnicha jest równy 1. Dodaj 8 do zmiennej Constitution.
 <6> else oznacza w każdym innym przypadku
