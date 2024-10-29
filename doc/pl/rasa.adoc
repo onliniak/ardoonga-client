@@ -177,7 +177,19 @@ punkty_życia_za_każdy_punkt_kondycji:: 5
 ```
 TODO: Tutaj dodać dlaczego tak jest.
 
-=== Kopiowanie rasy z Dungeons & Dragons [Licencja OGL]
+=== Kopiowanie rasy z Dungeons & Dragons
+
+Akurat z DnD jest o tyle dobrze, że mają *SRD*, czyli PDF z którego możesz kopiować co tylko chcesz. Musisz tylko podać link do PDFa, numer strony i skopiować COPYRIGHT (NOTE) w całości.
+
+PDFy znajdziesz na: https://www.dndbeyond.com/resources/1781-systems-reference-document-srd 
+
+==== CreativeCommons
+
+Creative Commons ma mniej ciekawostek prawniczych. Największa kontrowersja dotyczy CC-BY 4.0 które dogadało się z GPL 3.0 ale zapomniało o wszystkich innych wersjach, więc legalnie nie możesz ładować zdjęć z folderów.
+
+Na szczęście definicja definicji programowania programów zakłada, że pobieranie zdjęć z innych stron jest dozwolone.
+
+Tak czysto teoretycznie zapomniano o drobnej drobnostce. MPL2.0 pozwala na zbieranie wielu osobnych prac w jedną większą. Mogę więc dołączyć CC-BY-SA-4.0 do GPL3.0 do MPL2.0 obok kodu GPL2.0 dołączonego do MPL2.0. Obie prace są chronione swoimi wersjami GPL ORAZ MPL2.0. Jednocześnie MPL2.0 NIE MOŻE zapewniać większych praw, niż oryginał. Ostatecznie mogę dołączyć MPL2.0 do GPL2.0 lub dowolna późniejsza wersja do GPL 3.0 lub dowolna późniejsza wersja. A jeszcze BSD 3.0 i MIT mogę dołączyć do MPL 2.0. Ostatecznie otrzymuję legalną GPL zawsze w najnowszej wersji. Tylko pytanie czy sąd by to uznał.
 
 ==== Teoria własności korporacyjnej
 
@@ -189,8 +201,6 @@ możesz spokojnie kopiować co chcesz.
 
 Open Game License mówi, że wszystkie prawa należą do korporacji. Twierdzi też, że w interesie Korporacji jest robienie sobie darmowej reklamy. Ogranicza więc swoje prawa autorskie do wybranych dokumentów.
 
-*A po naszemu → kopiowanie _statystyk, umiejętności, ekwipunku początkowego_ z https://www.dndbeyond.com/sources/dnd/basic-rules-2014[podstawowych zasad 2014] jest dozwolone. _NIE DOTYCZY to_ opisów i zdjęć_*.
-
 Korporacja powtarza wszystkie dokumenty, które *definitywnie są zabronione* do kopiowania, tłumaczenia i przepisywania jak:
 
 Dungeons & Dragons, D&D, Player’s Handbook, Dungeon Master, Monster Manual, d20 System, Wizards of the Coast, Forgotten Realms, Faerûn, proper names (including those used in the names of spells or items), places, Underdark, Red Wizard of Thay, the City of Union, Heroic Domains of Ysgard, EverChanging Chaos of Limbo, Windswept Depths of Pandemonium, Infinite Layers of the Abyss, Tarterian Depths of Carceri, Gray Waste of Hades, Bleak Eternity of Gehenna, Nine Hells of Baator, Infernal Battlefield of Acheron, Clockwork Nirvana of Mechanus, Peaceable Kingdoms of Arcadia, Seven Mounting Heavens of Celestia, Twin Paradises of Bytopia, Blessed Fields of Elysium, Wilderness of the Beastlands, Olympian Glades of Arborea, Concordant Domain of the Outlands, Sigil, Lady of Pain, Book of Exalted Deeds, Book of Vile Darkness, beholder, gauth, carrion crawler, tanar’ri, baatezu, displacer beast, githyanki, githzerai, mind flayer, illithid, umber hulk, yuan-ti.
@@ -201,19 +211,6 @@ Jeśli zignorujesz prawa, o których nie masz pojęcia to naślą na Ciebie swoi
 Jeśli Twój Rząd odważy się wprowadzić prawo, które nie jest im na rękę to naślą na Ciebie swoich prawników.
 
 // (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the OPEN Game Content;
-
-Zapytałem Wyrocznię (ChatGPT):
-
-```
-Yes, you can use content from the Dungeons & Dragons (D&D) Basic Rules under the Open Game License (OGL), but there are specific guidelines you need to follow. The OGL allows for the use of certain game mechanics and content, but you must ensure that you properly attribute the source and comply with the terms of the license.
-
-To use race descriptions, you should:
-
-Confirm that the specific content you wish to use is covered by the OGL.
-Provide appropriate credit to the original source.
-Avoid using any proprietary content that is not included in the OGL.
-For the most accurate and detailed information, it's best to refer to the actual text of the OGL and any related documentation provided by Wizards of the Coast.
-```
 
 Noi teraz strona 26 SRD_OGL używa nazwy Ki. 
 
@@ -231,20 +228,25 @@ Powiedzmy, że chcę popełnić piractwo najwyższego poziomu i skopiować sobie
 
 Dodaję plik *mnich.adoc* do *extensions/Archipelag/player/new/_class_/mnich.adoc*
 
+NOTE: Pamiętaj, że nie możesz reklamować Dungeons & Dragons. 
+Napisanie, że w Twojej grze jest jakiś mnich jest w porządku. 
+Napisanie, że jest tam mnich z DnD już jest złe. 
+ALE możesz napisać, że jest tam mnich kompatybilny z 5 Edycją albo 5e.
+
 ```adoc
 [#Original author]
 copyright:: Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
 System Reference Document Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
 
-project:: Basic Rules | Dungeons and Dragons | System Reference
-Document 5.1 Page 26 | Open Gaming License, Version 1.0a. <https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>
+project:: Dungeons and Dragons | System Reference
+Document 5.1 | Page 26 | Open Gaming License, Version 1.0a. <https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>
 
 license:: OGL-1.0-a <https://opengamingfoundation.org/ogl.html>
 
 [#Cechy]
 hit_dice:: 1d8 / lvl
-punkty_życia_poziom_1:: 8 + Constitution
-punkty_życia:: + 1d8 / (Constitution lvl)
+
+punkty_życia:: case lvl 1 + 8, Constitution else + 1d8 / Constitution, lvl
 
 [#Wiedza]
 zbroja:: false
@@ -259,52 +261,73 @@ ki:: true from 2 lvl
 deflect_missiles: true from 3 lvl
 ```
 
-===== Gdybanie || Sekcja notatkowa
+Niestety, Vallheru zostało specjalnie uproszczone dla potrzeb internetu. 
+Jeśli chcesz przenieść DnD musisz znać sztukę programowania w pseudo-Clojure na zaawansowanym poziomie. 
+ALBO kopiuj i wklejaj, aż wyjdzie to czego oczekujesz.
 
-AUTHOR: W przeciwieństwie do Vallheru, które zostało uproszczone dla przeglądarek 
-DnD posiada dość skomplikowane wymagania. Jeszcze muszę pomyśleć jak to najlepiej 
-przedstawić, by było czytelne i dla ludzi i dla komputera.
+[source,clojure]
+----
+case lvl <1>
+1 <2> <3> + <5> 8, Constitution <6>
+else <4> + <5> 1d8 / Constitution, lvl <7>
+----
+<1> case oznacza wybór
+<2> Pierwszy znak oznacza kiedy coś ma się wydarzyć
+<3> case 1 czytamy jako kiedy lvl (poziom mnicha) jest równy 1
+<4> else oznacza w każdym innym przypadku
+<5> W Clojure znaki matematyczne są pierwsze, a argumenty funkcji następne.
+Czytamy to jako *dodaj* coś do czegoś
+<6> Jeśli poziom mnicha jest równy 1. Dodaj 8 do zmiennej Constitution.
+<7> W każdym innym przypadku dodaj 
+1 razy wynik rzutu kości ośmio-ściennej
+do dzielenia zmiennej Constitution przez zmienną lvl
 
-https://www.gnu.org/software/emacs/manual/html_node/elisp/Conditionals.html
-
-W porównaniu z tym czymś poniżej wersja tekstowa wydaje się o wiele czytelniejsza. 
-Ale skorzystanie z wersji tekstowej wymusza stosowanie https://pl.wikipedia.org/wiki/Notacja_polska[Notacji Łukasiewicza] 
-a`la lisp 
+```PHP
+ki:: true from 2 lvl <1>
 ```
-„podziel	siedem	przez sumę	dwu	i trzech”
-/	7	+	2	3
+<1> Poznaj wiedzę ki jeśli masz 2 poziom lub wyżej.
+
+```PHP
+zbroja:: false <1>
+narzędzia:: 1x rzemieślnicze || 1x instrument_muzyczny <2> <3>
+umiejętności:: 2x from Acrobatics, Athletics, History, Insight, Religion, Stealth <4> <5>
+ekwipunek:: krótki_miecz || prosta_broń 
+&& <6>
+paczka_odkrywcy || paczka_lochy <7>
+```
+<1> Zablokuj możliwość uzyskania wiedzy na temat używania zbroi.
+<2> || oznacza ALBO.
+<3> Wybierz 1 razy narzędzie rzemieślnicze ALBO 1 razy instrument muzyczny. 
+Nie możesz wybrać obu naraz, ani żadnego.
+<4> x from oznacza wybieram x rzeczy z listy
+<5> Wybierz dokładnie 2 rzeczy z listy
+<6> && oznacza ORAZ
+<7> Wybierz krótki miecz ALBO prostą broń ORAZ paczkę odkrywcy lub paczkę z lochów. 
+ALBO oznacza wybór, a ORAZ że muszę dokonać kilku wyborów.
+
+Wygląda skomplikowanie, bo nie potrafię tłumaczyć ani na ludzki, ani na matematyczny logiczny. 
+
+TIP: Możesz stawiać spacje w dowolnym miejscu. Czasem pomaga z czytelnością.
+
+Dlaczego stosuję notację Łukasiewicza?:
+Tak mi było łatwiej z przepisaniem tego dla komputera. 
+Zresztą 
+standardowy język matematyki zajmuje za dużo miejsca.
+
+Porównaj z:
+
+```ruby
+case lvl
+when 1 
+8 + Constitution
+else
+1d8 + (Constitution / lvl)
 ```
 
-```neon
-hit_dice: [1d8, /, lvl]
-
-punkty_życia: [poziom: [
-  1: [8, +, Constitution],
-  else: [1d8, +, [Constitution, /, lvl] ]
-]]
-```
-albo
-
-```neon
-hit_dice: 
-- 1d8
-- /
-- lvl
-
-punkty_życia: 
-- poziom:
-  - 1:
-    - 8
-    - +
-    - Constitution
-  - else:
-    - 1d8
-    - +:
-      - Constitution
-      - /
-      - lvl
+```ruby
+case lvl when 1 8 +Constitution else 1d8+(Constitutution/lvl)
 ```
 
-Właśnie zobaczyłem, że https://www.dndbeyond.com/resources/1781-systems-reference-document-srd ma wersję CC-BY. 
-W praktyce wiem, że kiepsko mi idzie z tłumaczeniem na ludzki ustandaryzowany ale zasady się nie zmieniają: 
-opisy i zdjęcia są złe. Przepisywanie statystyk jest dobre.
+```Clojure
+case lvl 1 + 8, Constitution else + 1d8 / Constitution, lvl
+```
