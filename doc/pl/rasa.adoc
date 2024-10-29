@@ -269,22 +269,22 @@ ALBO kopiuj i wklejaj, aż wyjdzie to czego oczekujesz.
 ----
 case lvl <1>
 1 <2> <3>
-+ <5>
++ <4>
 
-case lvl 1 + 8, Constitution <6>
+case lvl 1 + 8, Constitution <5>
 
-else <4>
-+ <5>
+else <6>
++ <4>
 
 else + 1d8 / Constitution, lvl <7>
 ----
 <1> case oznacza wybór
 <2> Pierwszy znak oznacza kiedy coś ma się wydarzyć
 <3> case 1 czytamy jako kiedy lvl (poziom mnicha) jest równy 1
-<4> else oznacza w każdym innym przypadku
-<5> W Clojure znaki matematyczne są pierwsze, a argumenty funkcji następne.
+<4> W Clojure znaki matematyczne są pierwsze, a argumenty funkcji następne.
 Czytamy to jako *dodaj* coś do czegoś
-<6> Jeśli poziom mnicha jest równy 1. Dodaj 8 do zmiennej Constitution.
+<5> Jeśli poziom mnicha jest równy 1. Dodaj 8 do zmiennej Constitution.
+<6> else oznacza w każdym innym przypadku
 <7> W każdym innym przypadku dodaj 
 1 razy wynik rzutu kości ośmio-ściennej
 do dzielenia zmiennej Constitution przez zmienną lvl
