@@ -175,7 +175,22 @@ inteligencja:: -1
 siła_woli:: 1
 punkty_życia_za_każdy_punkt_kondycji:: 5
 ```
-TODO: Tutaj dodać dlaczego tak jest.
+
+==== Prostsze przykłady
+
+Komputer doda do siebie wszystkie zdolności. Jeśli moja rasa daje 3 punkty siły za każdy punkt astralny, 
+a klasa daje 1 punkt siły za każdy punkt astralny to w rezultacie dostaję 4 punkty siły za każdy 
+punkt astralny.
+
+Modyfikatory można też mnożyć.
+
+Jeśli chcesz, możesz ustawić zasadę że dla każdego bonusu musisz wybrać taką samą negatywną cechę 
+albo postać nie zostanie dodana. Zmienisz to w ustawieniach świata. 
+
+true oznacza, że gracz posiada do czegoś dostęp. false oznacza, że takiego dostępu nie ma.
+
+Ardoonga Engine nie narzuca jak mają się nazywać zmienne, a sekcje tylko 
+ograniczają ilość wyświetlanych informacji.
 
 === Kopiowanie treści z Dungeons & Dragons
 
@@ -324,7 +339,7 @@ Tak mi było łatwiej z przepisaniem tego dla komputera.
 case lvl when 1 8 + Constitution else 1d8 + (Constitutution / lvl)
 ```
 
-```adoc
+```
 HP::
 case lvl
 * 1
@@ -341,7 +356,7 @@ case lvl
 case lvl when 1 + 8, Constitution else + 1d8 / Constitution, lvl
 ```
 
-```adoc
+```
 HP::
 case lvl
 * 1
