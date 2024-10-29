@@ -200,9 +200,9 @@ PDFy znajdziesz na: https://www.dndbeyond.com/resources/1781-systems-reference-d
 
 ==== CreativeCommons
 
-Creative Commons ma mniej ciekawostek prawniczych. Największa kontrowersja dotyczy CC-BY 4.0 które dogadało się z GPL 3.0 ale zapomniało o wszystkich innych wersjach, więc legalnie nie możesz ładować zdjęć z folderów.
+Creative Commons ma mniej ciekawostek prawniczych. Największa kontrowersja dotyczy CC-BY 4.0 które dogadało się z GPL 3.0 ale zapomniało o wszystkich innych wersjach, więc legalnie nie możesz trzymać zdjęć w folderach z grą.
 
-Na szczęście definicja definicji programowania programów zakłada, że pobieranie zdjęć z innych stron jest dozwolone.
+Na szczęście definicja definicji definiuje program jako wszystko, czego potrzebuję do uruchomienia. Jeśli mój program przetwarza pliki, które pobierze sobie osobno z innej strony to w żaden sposób nie naruszam licencji.
 
 Tak czysto teoretycznie zapomniano o drobnej drobnostce. MPL2.0 pozwala na zbieranie wielu osobnych prac w jedną większą. Mogę więc dołączyć CC-BY-SA-4.0 do GPL3.0 do MPL2.0 obok kodu GPL2.0 dołączonego do MPL2.0. Obie prace są chronione swoimi wersjami GPL ORAZ MPL2.0. Jednocześnie MPL2.0 NIE MOŻE zapewniać większych praw, niż oryginał. Ostatecznie mogę dołączyć MPL2.0 do GPL2.0 lub dowolna późniejsza wersja do GPL 3.0 lub dowolna późniejsza wersja. A jeszcze BSD 3.0 i MIT mogę dołączyć do MPL 2.0. Ostatecznie otrzymuję legalną GPL zawsze w najnowszej wersji. Tylko pytanie czy sąd by to uznał.
 
@@ -275,6 +275,30 @@ martial_arts:: true from 2 lvl
 ki:: true from 2 lvl
 deflect_missiles: true from 3 lvl
 ```
+
+===== Co wyróżnia mojego mnicha ?
+
+Powiedzmy, że mój Zakon częstuje pielgrzymów herbatą. Na co dzień młodsi członkowie zajmują się uprawą roślin, 
+a starsi opowiadają o bóstwie któremu poświęcono świątynię oraz o innych uznawanych przez siebie bogach.
+
+Brzmi niewinnie ? No to ze względu na nieszkodliwość specjalnie wybrani przedstawiciele podróżują 
+po wszystkich ziemiach tego świata jako służba dyplomatyczna i przedstawiciele królów. A ci, 
+którzy się nie załapią mają szansę na dostanie pliku papierów uprawniających do zbierania 
+ziół niezależnie od królestwa, w którym się znajdują i lokalnych przepisów. 
+
+Więc realnie mówimy tu o międzynarodowej organizacji szpiegowskiej. Wiem, właśnie zepsułem 
+wszystkim zabawę ale bez przesady. Absolutnie każdy może sobie wejść do klasztoru z ulicy 
+jak w jakimś Gothicu II, a magia znana jest tylko nielicznym ? Jeszcze mają szczęście, że 
+tutaj magia wymaga ogromnej dyscypliny i takiej liczby punktów many, że nikomu nie chce się 
+marnować na to czasu. 
+
+Ale nawet jeśli to w takim Dishonored gra się o wiele lepiej bez magii. 
+Tylko ja i drobne sztuczki z bełtami, które sam sobie przygotowałem w oparciu o swoją wiedzę. 
+Zresztą raz widziałem grę, gdzie mnich był w stanie pokonać każdego bosa. Spotykałeś tam 
+nauczycielkę, która po przegranej walce uczyła Cię paraliżu na 2 tury. Więc robiłeś 
+paraliż + słaby atak + czasem miksturka many. Powtórz miliard razy. Tu tego nie chcę.
+
+===== Programowanie
 
 Niestety, Vallheru zostało specjalnie uproszczone dla potrzeb internetu. 
 Jeśli chcesz przenieść DnD musisz znać sztukę programowania w pseudo-Lisp na zaawansowanym poziomie. 
