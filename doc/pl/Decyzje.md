@@ -561,7 +561,74 @@ All rights belong to their respective owners.
 
 ### Neon
 
-https://ehrpg.github.io/qstar/
+AUTHOR: W przeciwieństwie do Vallheru, które zostało uproszczone dla przeglądarek 
+DnD posiada dość skomplikowane wymagania. Jeszcze muszę pomyśleć jak to najlepiej 
+przedstawić, by było czytelne i dla ludzi i dla komputera.
+
+https://www.gnu.org/software/emacs/manual/html_node/elisp/Conditionals.html
+
+W porównaniu z tym czymś poniżej wersja tekstowa wydaje się o wiele czytelniejsza. 
+Ale skorzystanie z wersji tekstowej wymusza stosowanie https://pl.wikipedia.org/wiki/Notacja_polska[Notacji Łukasiewicza] 
+a`la lisp 
+```
+„podziel	siedem	przez sumę	dwu	i trzech”
+/	7	+	2	3
+```
+
+```clojure
+(case (+ 2 3)
+  6 "error"
+  5 "ok")
+```
+
+```haskell
+let absOfN =
+  if n < 0 -- Single binary expression
+  then -n
+  else  n
+```
+
+```haskell
+abs n
+  | n < 0     = -n
+  | otherwise =  n
+```
+
+```neon
+hit_dice: [1d8, /, lvl]
+
+punkty_życia: [poziom: [
+  1: [8, +, Constitution],
+  else: [1d8, +, [Constitution, /, lvl] ]
+]]
+```
+albo
+
+```neon
+hit_dice: 
+- 1d8
+- /
+- lvl
+
+punkty_życia: 
+- poziom:
+  - 1:
+    - 8
+    - +
+    - Constitution
+  - else:
+    - 1d8
+    - +:
+      - Constitution
+      - /
+      - lvl
+```
+
+Właśnie zobaczyłem, że https://www.dndbeyond.com/resources/1781-systems-reference-document-srd ma wersję CC-BY. 
+W praktyce wiem, że kiepsko mi idzie z tłumaczeniem na ludzki ustandaryzowany ale zasady się nie zmieniają: 
+opisy i zdjęcia są złe. Przepisywanie statystyk jest dobre.
+
+---
 
 Trzeba przepisać JSON Schema na https://github.com/matej21/neon-js
 
