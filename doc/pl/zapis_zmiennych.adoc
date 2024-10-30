@@ -192,11 +192,17 @@ Akurat z DnD jest o tyle dobrze, że mają *SRD*, czyli PDF z którego możesz k
 
 PDFy znajdziesz na: https://www.dndbeyond.com/resources/1781-systems-reference-document-srd 
 
+Podejrzewam, że obie wersje Creative Commons i OGL są równie dobre ale pewności nie mam.
+
 ==== CreativeCommons
 
-Creative Commons ma mniej ciekawostek prawniczych. Największa kontrowersja dotyczy CC-BY 4.0 które dogadało się z GPL 3.0 ale zapomniało o wszystkich innych wersjach, więc może się zdarzyć że nie będziesz mógł legalnie korzystać z własnych plików.
+Creative Commons ma mniej ciekawostek prawniczych. Największa kontrowersja dotyczy CC-BY 4.0 które dogadało się z GPL 3.0 ale zapomniało o wszystkich innych wersjach, więc może się zdarzyć że nie będziesz mógł legalnie korzystać z własnych plików. 
 
-Na szczęście nie dotyczy to rozszerzeń pobieranych osobno i zdjęć pobieranych z innych stron internetowych.
+===== Sprawa Ardoongi
+
+O ile dobrze rozumiem, jeśli mój program przetwarza pliki ale nie wymaga ich do uruchomienia to mówimy o 
+osobnych prawach autorskich dla każdego takiego pliku. Problem polega na tym, że tutaj łączę pliki ze sobą, 
+by stworzyć jedną dużą grę.
 
 ==== Teoria własności korporacyjnej
 
@@ -301,8 +307,37 @@ w bibliotece. Nawet miałby motyw, że go okłamano.
 ===== Programowanie
 
 Niestety, Vallheru zostało specjalnie uproszczone dla potrzeb internetu. 
-Jeśli chcesz przenieść DnD musisz znać sztukę programowania w pseudo-Lisp na zaawansowanym poziomie. 
-ALBO kopiuj i wklejaj, aż wyjdzie to czego oczekujesz.
+Jeśli chcesz przenieść DnD musisz znać sztukę programowania.
+
+====== Demo
+
+https://jsfiddle.net/uz1a9bw2/
+
+Moim zdaniem oryginalna Notacja Łukasiewicza jest czytelniejsza ale wersja odwrotna jest prostsza 
+w przepisywaniu komputerom. 
+
+Piszemy po anglo-podobnemu:
+
+* if = jeśli
+* is = jest równy
+* then = wtedy
+* else if = w innym przypadku
+* else = w każdym innym przypadku
+
+```coffee
+if lvl is 1 then oblicz "1 1 + 5 *"  <1>
+else if lvl is 2 then oblicz "5, 5 *" <2>
+else oblicz "9 2 /" <3>
+```
+
+<1> Jeśli lvl jest równy 1 wtedy oblicz 1+1 * 5.
+<2> W innym przypadku jeśli lvl jest równy 2 wtedy oblicz 5*5.
+<3> W każdym innym przypadku oblicz 9/2.
+
+W wersji końcowej chcę usunąć cudzysłowie wokół działań matematycznych. 
+Prościej się już nie da.
+
+====== Stare
 
 [source,clojure]
 ----
@@ -410,4 +445,10 @@ Zamiast:
 
 Tak właściwie zastanawiam się czy by nie wprowadzić eksperymentalnej wersji, w której 
 piszesz po polskiemu, a program wyrzuca mój zapis matematyczny. Który potem przerabia 
+
+=== Pozostałe systemy
+
+https://wiki.rpg.net/index.php/Open_Game_Systems
+
+Nie zamierzam się nimi zajmować w najbliższym czasie. 
 sobie i tak na instrukcję krok po kroku i pracuje na niej.
