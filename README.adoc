@@ -8,9 +8,6 @@ CAUTION: Niestabilne. Wszystko co tu pisze może się zmienić w każdej chwili.
 
 Zazwyczaj zaczynamy od wybrania rasy i klasy swojej postaci. Dodajmy kilka z nich.
 
-NOTE: Ardoonga nie odróżnia ras i klas. 
-Z punktu widzenia silnika klasy posiadają wiedzę, której nie można zdobyć w inny sposób. Sprawdź dokument <<doc/pl/wiedza.adoc#Wiedza,wiedza>>, jeśli chcesz wiedzieć więcej.
-
 Ale najpierw zacznijmy od najważniejszego.
 
 [qanda]
@@ -21,4 +18,4 @@ Ja nazwę swoje rozszerzenie Archipelag.
 //Gdzie znajdę ściągawkę jak pisać pliki ?::
 //https://solr.apache.org/guide/8_10/meta-docs/asciidoc-syntax.html
 
-include::doc/pl/rasa.adoc[]
+include::doc/pl/zapis_zmiennych.adoc[]
