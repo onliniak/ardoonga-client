@@ -1,5 +1,43 @@
 # Ardoonga Client
 
+## SPAM ProSpołeczny
+
+Ta teoria zakłada, że kupowanie baz danych i serwerów dla prostego API 
+jest nieopłacalne. Wzamian Społeczność ma obowiązek zapłacić mi rachunki 
+poprzez umożliwienie spamowania w sieciach społecznościowych.
+
+Tak zwane wykształciuchostwo, czy tam Public Data Science praktykuje 
+przede wszystkim (Mastodon)[https://mastodon.social/] opierając się na dobrych praktykach Twittera.
+
+Już na pierwszy rzut oka widać, że sam Tusk przejął tam władzę:
+
+* Sexually explicit or violent media must be marked as sensitive or with a content warning
+This includes content that is particularly provocative even if it may not show specific body parts, as well as dead bodies, bloody injuries, and other gore. Particularly obscene content may be prohibited entirely. Profile pictures and header images may not contain sexually explicit or violent media.
+* No racism, sexism, homophobia, transphobia, ableism, xenophobia, or casteism.
+Transphobic behavior such as intentional misgendering and deadnaming is strictly prohibited. Promotion of "conversion therapy" is strictly prohibited. Criticism of governments and religions is permissible unless being used as a proxy for discrimination.
+* No incitement of violence or promotion of violent ideologies
+Calling for people or groups to be assassinated, murdered, or attacked physically is strictly prohibited. Support for violent groups or events is prohibited.
+* No harassment, block evasion, dogpiling, or doxxing of others
+Repeat attempts to communicate with users who have blocked you or creation of accounts solely to harass or insult individuals is strictly prohibited. Coordinated activity to attack other users is prohibited. Posting of private personal information about others is prohibited.
+* Do not share information widely-known to be false and misleading
+False and misleading information and links from low-quality sources may not be posted, especially if they are likely to mislead or confuse others or endanger their safety.
+* Content created by others must be attributed, and use of generative AI must be disclosed
+Content created by others must clearly provide a reference to the author, creator, or source. For adult content, this
+
+Ale niech będzie, że wierzę Tęczowej Ideologii i nie widzę tu ani słowa o wysyłaniu automatycznych treści 
+przez komputery. Gdyby twórcy byli normalni można by pomyśleć, że jeśli będę spamować ile wlezie ale po 
+godzinie usunę wszystkie treści to nie zobaczą w tym niczego złego. Wręcz pomagam im dla dobra Nauki i badań nad ludźmi.
+
+Drugi w kolejności jest (BlueSky)[https://bsky.app/] używany m.in. przez Rafała Trzaskowskiego.
+
+Kolejny klon Twittera, również ma całkiem wygodne API. I co najważniejsze oficjalne SDK w Dart. 
+Możliwe, że można uzyskać pełny dostęp z poziomu smartfona. W ogóle mam taki pomysł: 
+jeśli masz zdiagnozowaną chorobę umysłową (iPhona lub najnowszego Androida) to wręcz błagasz 
+mnie o szpiegowanie, naruszanie prywatności i takie tam. Więc bez większego problemu mogę 
+użyć dobrowolnych ochotników nad praktyczną konsekwencją wysyłania swojego adresu IP przez internet.
+
+Ewentualnie można by użyć HarperDB.
+
 ## Dokumentacja Techniczna
 
 Tu już sam się gubię. Przechodzę do doc/index.adoc
