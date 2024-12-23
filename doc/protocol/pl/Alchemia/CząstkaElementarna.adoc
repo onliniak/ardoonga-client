@@ -19,10 +19,12 @@ składnik o wskazanym identyfikatorze.
 
 Możemy też używać warunków [if ...] 
 sprawdzanych w czasie zbierania rośliny:
+
 - precipitation = średnia wilgotność
 - temperature = średnia temperatura
 
 Łączymy je słowem AND oraz jednym z 4 słów:
+
 - gte = większe lub równe
 - lte = mniejsze lub równe
 
