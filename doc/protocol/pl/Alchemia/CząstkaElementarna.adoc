@@ -3,12 +3,58 @@
 Funkcja tworząca nowe oraz modyfikująca istniejące statystyki. 
 Może modyfikować działanie innych cząstek. 
 Efekty jakie powoduje są do siebie dodawane. 
-Jest odpowiednikiem substancji chemicznej w naszym świecie. 
+Jest odpowiednikiem substancji chemicznej w naszym świecie.
 
 = Przykład
 
-W Valheru zwykło się mieszać wszystkie zioła czynne z ziołem neutralnym, 
-a trucizny powstają poprzez dodatek zioła trującego i zmniejszenie dawki neutralnej.
+Zgodnie z tradycyjną recepturą najprostszy przepis na 
+miksturę zdrowia to 3 uncje czerwonego kwiata i 1 uncja 
+neutralnego zielska.
 
-Zgodnie z teorią cząstek elementarnych Illani jest powiązane z sercem. 
-Może odbierać życie albo tamować upływ krwi. Wszystko zależy od dawki.
+Silnik pozwala nam na dodanie efektów dla każdej uncji.
+
+Tekst rozpoczęty od [mixer id nazwa] pozwala nam modyfikować 
+działanie podstawowych statystyk jeśli w miksturze zawarty jest 
+składnik o wskazanym identyfikatorze.
+
+Możemy też używać warunków [if ...] 
+sprawdzanych w czasie zbierania rośliny:
+- precipitation = średnia wilgotność
+- temperature = średnia temperatura
+
+Łączymy je słowem AND oraz jednym z 4 słów:
+- gte = większe lub równe
+- lte = mniejsze lub równe
+
+```adoc
+id:: illani
+hex:: 72010F #https://www.npmjs.com/package/hex-color-to-color-name
+
+życie_max:: -15
+życie:: 6
+
+[if precipitation gte 1500 AND temperature lte 20]
+hex:: FF4040
+smell:: 🌸
+życie_max:: +20
+
+[mixer id neutral]
+życie_max:: +5
+życie:: -3
+```
+
+Związki chemiczne zawarte w czerwonym kwiatku 
+zwiększą moje aktualne HP ale znacząco zmniejszą 
+maksymalne HP.
+
+Po wymieszaniu z ziołem neutralnym wartość lecznicza 
+się co prawda pogorszy ale zniknie szansa na zatrucie organizmu.
+
+Istnieje też odmiana występująca w wilgotnym i niezbyt gorącym 
+środowisku. Różni się kolorem oraz 🌸zapachem i delikatnie zwiększa maksymalne 
+życie (-15+20 daje +5 maksymalnego HP na uncję oraz +6 aktualnego HP).
+
+Kombinacje są w zasadzie nieskończone.
+
+Specyfikacja nie definiuje czy ukryjesz tę informację, czy może pokażesz graczom. 
+U mnie statystyki będą się pokazywały wraz z postępem w zielarstwie.
