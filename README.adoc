@@ -44,9 +44,10 @@ i mam takie klocki, które dowolnie ustawiam na ekranie. Pomagają rozrysować s
 wyglądać strona. 
 
 Do tego dochodzi ideologia, a więc mam smartfona z 2013 i laptop pamiętający 
-czasy Windowsa XP. Jeśli jak każdy debil uruchomisz na tym tony animacji i JavaScriptu 
+czasy Windowsa XP. Jeśli jak każdy "profesjonalista" uruchomisz na tym tony animacji i JavaScriptu 
 to masz praktycznie zagwarantowane wyrzucenie do pulpitu. Musisz stworzyć prosty design 
 mając do dyspozycji różnej wielkości prostokąty, zaokrąglone kwadraty i ikony.
+
 A że podstawowym celem samouka jest nauka, to myślałem by zrobić taki konkurs 
 ze zwycięskim projektem włączonym do Ardoongi.
 
@@ -77,6 +78,14 @@ Przechodzę do katalogu "Protokół".
 Trochę się pomiesza ale doc/pl będzie do książki "Jak stworzyć grę", 
 a tutaj mam wersję powiedzmy techniczną.
 ```
+
+Ze względu na brak czasu:
+
+- Magia i Alchemia będą korzystać z tej samej metody "łączenia" 
+składników ála Sowi Dom (najlepszy system magiczny i tak ma 
+Avatar The Last Airbender).
+- Nie robię unikalnych opisów, przedmiotów, ani żadnej zawartości gry.
+- Nie wiem czy wyjdzie Forum i Wiadomości Prywatne.
 
 Ardoonga pomoże Ci stworzyć internetową tekstową grę RPG. 
 Nie musisz konfigurować żadnych serwerów, ani za nic płacić. 
