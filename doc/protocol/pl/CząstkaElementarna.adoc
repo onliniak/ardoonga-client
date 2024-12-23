@@ -24,6 +24,11 @@ sprawdzanych w czasie zbierania rośliny:
 
 - precipitation = średnia wilgotność
 - temperature = średnia temperatura
+- latitude = północ/południe współrzędne na GPS
+- longitude = wschód/zachód
+- elevation = wysokość nad poziomem morza
+- depth = głębokość pod poziomem morza
+- biome = nazwa biomu
 
 Łączymy je słowem AND oraz jednym z 5 słów:
 
@@ -33,8 +38,29 @@ sprawdzanych w czasie zbierania rośliny:
 - lt = mniejsze niż
 - gt = większe niż
 
+type może mieć jedną z poniższych wartości:
+- ✿(U+273F) dla czegoś z kwiatów, traw i podobnych roślin
+- ⛰(U+26F0) dla skał
+- 🪵(U+1FAB5) dla czegoś zrobionego z drewna
+- 🌲(U+1F332) dla czegoś zbieranego z drzew
+- 🜄(U+1F704) męska toaleta. Inaczej alchemiczny symbol wody
+- 🔥(U+1F525) coś spalonego w ogniu
+- 🥣 coś, co trzeba zmielić moździerzem
+- 🍵 coś do picia
+- 🫕 podgrzać na ogniu
+- ⚙️ zaczekaj aż koło wykona pełen obrót
+
+Akurat type będzie pewnie jedną z bardziej kontrowersyjnych treści 
+ze względu na to, że ludzkość nie potrafi stworzyć jednego symbolu 
+dla wszystkiego. Albo jak w przypadku egipskich hieroglifów i 
+chińskich znaków zminiaturowane ikonki są nieczytelne.
+Ogółem chcę mieć coś, co pozwoli zapisać przepis na coś.
+Na przykład "zbierz owoce z drzewa, wrzuć do garnka z wodą 
+i zaczekaj 15 minut".
+
 ```adoc
 id:: illani
+type:: ✿
 hex:: 72010F #https://www.npmjs.com/package/hex-color-to-color-name
 
 życie_max:: -15
