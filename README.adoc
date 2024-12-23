@@ -1,8 +1,55 @@
 = Ardoonga Engine
 
-#Ogłoszenia
+# Ogłoszenia
 
 Dobra, zmiana planów. 20 stycznia mam rzekomo umówioną rozmowę z kandydatem na własnego szefa.
+Na końcu świata, 0.5 km od asfaltowej drogi i 2 autobusy bezpośrednie na dzień.
+Żeby przetrwać w takim miejscu muszę natychmiast zgłupieć o 90%.
+Taki skończony debil nie myśli, popełnia miliard błędów na sekundę (nie jak ja, że
+zrobię głupi błąd, szukam go godzinę i zapominam zapisać rozwiązania), ma wykształcenie
+wyższe doktora inżyniera, gluta pod nosem, poszarpaną koszulkę z jakimś wieśniackim tekstem,
+i nie mówi tylko coś bełkocze. Nie planuje, bo to działka szefa tylko bezmyślnie wykonuje polecenia
+i jest ekspertem w udawaniu, że pracuje. Zejście do takiego poziomu z samouka jest niemalże niemożliwe.
+
+Oficjalnie inaczej się to nazywa ale jak tak pomyśleć. Jeśli rzucę okiem na kilka gier w stylu 
+"klikam w linki i podwyższam statystyki", gdzieś zanotuję że wedle jednostki ludzkiej numer 000001 
+to nieuczciwe, że wojownicy nie mogą rzucać czarów bojowych ale mogą wzmacniać nią przedmioty, 
+jeśli zanotuję że wedle jednostki ludzkiej 000002 zmiana czegokolwiek jest niemożliwa bez 
+osób technicznych, jeśli zaplanuję sobie że zbieram wiadomości w jednym miejscu o treści 
+"gracz 1234 wykuł krótki miecz i włożył w to 100 energii, proszę odebrać mi surowce + energię 
+oraz dać przedmioty" i potem bliżej nieokreślona liczba komputerów to liczy i zapisuje sobie, 
+jeśli zakładam że najważniejszy jest dostęp do danych, dopiero do niego podłączam: czatboty,
+aplikacje mobilne, gry 2D, "gry" przeglądarkowe i całą resztę. Jeśli mówię sobie "mam 128mb RAMu, 
+współdzielony procesor jednowątkowy, normalne konto linuksa" i muszę coś z tym zrobić. Jeśli 
+zaczynam od kiepskiej, bo kiepskiej ale makiety aplikacji. I jeśli przeglądam schemat pod kątem 
+zgodności z istniejącymi grami pod kątem prawnym, bezpieczeństwa i wygody to na junior cokolwiek developera 
+zdecydowanie się nie nadaję. Samouk poznaje ogólnie jak coś działa ale nie skupia się na szczegółach, 
+zawodowy programista dokładnie na odwrót. Wie jak pracować w jednej technologi, z uwzględnieniem 
+wszystkich szczegółów ale nie przejmuje się tym co do niego nie należy. Koniecznie musi też mieć 
+chorobę psychiczną o nazwie "współpraca w grupie". Samouk najpierw stawia wymagania takiej grupie, 
+być może pozwala jej na składanie własnych żądań i dopiero po spełnieniu ich wszystkich przyznaje 
+innym prawo do współpracy ze sobą. Lata w szkole i lata grania w GTA Online nauczyły mnie, że 
+praca z losowymi ludźmi niemal zawsze kończy się kompletną katastrofą. Ale łatwiej oskarżać mnie 
+w zasadzie o wszystko.
+
+== To już koniec ?
+
+Więc zanim ostatecznie całkowicie zgłupieję chciałbym jeszcze dokończyć ostatni i jedyny projekt 
+w swoim życiu.
+
+https://www.figma.com/proto/MEitZEuwlWNTazjTUOC90L/Untitled?node-id=0-1&t=kIW7dNIbLNeMHUJC-1 →
+jako skończony debil nie mogę używać profesjonalnych narzędzi bez wartego dziesiątki tysięcy 
+złotych szkolenia ale w skrócie chodzi o to, że wpisuję "Google Material Design Components" 
+i mam takie klocki, które dowolnie ustawiam na ekranie. Pomagają rozrysować sobie jak ma 
+wyglądać strona. 
+
+Do tego dochodzi ideologia, a więc mam smartfona z 2013 i laptop pamiętający 
+czasy Windowsa XP. Jeśli jak każdy debil uruchomisz na tym tony animacji i JavaScriptu 
+to masz praktycznie zagwarantowane wyrzucenie do pulpitu. Musisz stworzyć prosty design 
+mając do dyspozycji różnej wielkości prostokąty, zaokrąglone kwadraty i ikony.
+A że podstawowym celem samouka jest nauka, to myślałem by zrobić taki konkurs 
+ze zwycięskim projektem włączonym do Ardoongi.
+
 ```Największą przeszkodą zawsze było zniżanie się do Waszego poziomu: 
 myślenie, czy po wejściu w przeglądarkę wszystko będzie zrozumiałe, 
 zastanawianie się jak mają wyglądać pliki konfiguracyjne, by nikt się nie pomylił ani niczego nie zepsuł,
