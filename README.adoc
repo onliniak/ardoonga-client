@@ -1,5 +1,36 @@
 = Ardoonga Engine
 
+#Ogłoszenia
+
+Dobra, zmiana planów. 20 stycznia mam rzekomo umówioną rozmowę z kandydatem na własnego szefa.
+```Największą przeszkodą zawsze było zniżanie się do Waszego poziomu: 
+myślenie, czy po wejściu w przeglądarkę wszystko będzie zrozumiałe, 
+zastanawianie się jak mają wyglądać pliki konfiguracyjne, by nikt się nie pomylił ani niczego nie zepsuł,
+Ograniczanie liczby kont na jakie trzeba się zalogować,
+Zastanawianie się która z form logowania bezhasłowego będzie najprzyjemniejsza w użyciu dla użytkowników
+I takie tam ...
+
+Teraz zakładam sobie spam bota pod https://bsky.app/profile/ardoonga-bot.bsky.social 
+// albo https://mastodon.social/@ArdoongaBOT
+i wykorzystam do przechowywania wiadomości od wszystkich użytkowników.
+Technicznie będę pisał sam do siebie.
+// Potem i tak będzie trzeba przejść na HarperDB.
+Potem zbiorę je programem na Github Actions (wcześniej na swoim komputerze) 
+i może znajdą się jakieś praktyczne zalety Ideologii Otwartych Serwerów.
+Crystal jest szczególnie dobry w tworzeniu ogromnych pętli i grupowaniu 
+megabajtów wiadomości w mniejsze pliki.
+
+Właściwie zawsze wychodziło mi to o wiele lepiej, niż warstwa wizualna
+tak na szybko po prostu wyświetli się odpowiedni tekst na ekranie.
+Zgodnie z Ideologią nie ma większego znaczenia czy piszę czatbota, grę 2D, 
+czy wyświetlam pokolorowany tekst w przeglądarce. Najważniejsze, by to 
+co chcę wyświetlić zawsze znajdowało si,ę w tym samym miejscu.
+
+Przechodzę do katalogu "Protokół".
+Trochę się pomiesza ale doc/pl będzie do książki "Jak stworzyć grę", 
+a tutaj mam wersję powiedzmy techniczną.
+```
+
 Ardoonga pomoże Ci stworzyć internetową tekstową grę RPG. 
 Nie musisz konfigurować żadnych serwerów, ani za nic płacić. 
 Wszystko zrobi się automatycznie.

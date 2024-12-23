@@ -1,0 +1,14 @@
+= Opis
+
+Funkcja tworząca nowe oraz modyfikująca istniejące statystyki. 
+Może modyfikować działanie innych cząstek. 
+Efekty jakie powoduje są do siebie dodawane. 
+Jest odpowiednikiem substancji chemicznej w naszym świecie. 
+
+= Przykład
+
+W Valheru zwykło się mieszać wszystkie zioła czynne z ziołem neutralnym, 
+a trucizny powstają poprzez dodatek zioła trującego i zmniejszenie dawki neutralnej.
+
+Zgodnie z teorią cząstek elementarnych Illani jest powiązane z sercem. 
+Może odbierać życie albo tamować upływ krwi. Wszystko zależy od dawki.
