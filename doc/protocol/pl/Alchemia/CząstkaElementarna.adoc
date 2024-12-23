@@ -23,10 +23,13 @@ sprawdzanych w czasie zbierania rośliny:
 - precipitation = średnia wilgotność
 - temperature = średnia temperatura
 
-Łączymy je słowem AND oraz jednym z 4 słów:
+Łączymy je słowem AND oraz jednym z 5 słów:
 
 - gte = większe lub równe
 - lte = mniejsze lub równe
+- eq = równe
+- lt = mniejsze niż
+- gt = większe niż
 
 ```adoc
 id:: illani
