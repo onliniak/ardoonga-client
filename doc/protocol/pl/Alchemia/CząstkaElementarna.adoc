@@ -77,7 +77,7 @@ Podobnie jak w Gothicu prawdziwa magia tak na prawdę nie istnieje.
 Czarodzieje mają po prostu przy sobie takie runy-zwoje wielokrotnego użytku.
 
 Zaraz, zaraz. Czy to znaczy, że mam dostęp do zielska zamrażającego 
-powierzchnię, na którą wyleję miksturę ? A czemu by nie ?
+powierzchnię, na którą wyleję miksturę? A czemu by nie ?
 
 ```adoc
 id:: dziadek-mróz
