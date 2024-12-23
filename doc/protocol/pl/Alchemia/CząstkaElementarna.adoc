@@ -5,6 +5,8 @@ Może modyfikować działanie innych cząstek.
 Efekty jakie powoduje są do siebie dodawane. 
 Jest odpowiednikiem substancji chemicznej w naszym świecie.
 
+Identyfikatory mogą zawierać znaki [a-z] oraz -
+
 = Przykład
 
 Zgodnie z tradycyjną recepturą najprostszy przepis na 
@@ -63,3 +65,28 @@ Kombinacje są w zasadzie nieskończone.
 
 Specyfikacja nie definiuje czy ukryjesz tę informację, czy może pokażesz graczom. 
 U mnie statystyki będą się pokazywały wraz z postępem w zielarstwie.
+
+== Magia
+
+Wyobraźmy sobie, że illani jest znakiem alchemicznym. 
+
+Mając dostęp do odpowiedniego warsztatu i magicznego pergaminu 
+możesz zapisać go, co zamieni kawałek pergaminu w jednorazowe zaklęcie.
+
+Podobnie jak w Gothicu prawdziwa magia tak na prawdę nie istnieje. 
+Czarodzieje mają po prostu przy sobie takie runy-zwoje wielokrotnego użytku.
+
+Zaraz, zaraz. Czy to znaczy, że mam dostęp do zielska zamrażającego 
+powierzchnię, na którą wyleję miksturę ? A czemu by nie ?
+
+```adoc
+id:: dziadek-mróz
+
+status:: frozen
+```
+
+Oto wzór na cząstkę Dziadek Mróz, która 
+doda status frozen do wszystkiego czego dotknie.
+
+Możesz zrobić z niej czar Dziadek Mróz albo nazwać 
+czar po swojemu.
