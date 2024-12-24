@@ -1,0 +1,4 @@
+Jedna osoba pisze ile chce za podwyższenie określonej statystyki 
+o określoną liczbę punktów. Oraz dodaje opcjonalny bełkot w 
+stylu nauczycieli z Gothica. Druga płaci i szybko się rozwija.
+Nowość jest taka, że oprócz nauczycieli NPCów gracze też mogą to robić.
