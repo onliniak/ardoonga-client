@@ -40,3 +40,30 @@ po prostu opisuję z czego to jest zrobione i do jakiej
 kategorii należy. Jeśli potem ktoś powie, że na 
 miejscu do spania możesz spać. To taka możliwość 
 zostaje dodana do wszystkich miejsc tego typu jednocześnie.
+
+= GPS System 3000
+
+WARNING:: Jak zwykle jako jednostka wysoce inteligentna zawsze biorę 
+inspiracje z jakiś dziwnych miejsc.
+
+image::https://cdn.mobygames.com/promos/10054349-corruption-of-champions-ii-screenshot.jpg[]
+image::https://uploads.dailydot.com/2021/04/Corruption_of_Champions_combat.jpg?auto=compress&fm=pjpg[]
+
+Nie wiem jak się to nazywa, nazwijmy to corruption of champions system. 
+Chodzi o to, że cała mapa jest wyraźnie widoczna, razem ze szczegółami 
+w stylu zamknięte przejście, ograniczony dostęp, normalny korytarz itp. 
+Nasza postać porusza się tylko w 4 kierunkach: góra, dół, lewo, prawo.
+
+Wszystkie akcje jakie mogę wykonać mają przypisane skróty klawiszowe, 
+a powszechne akcje jak właśnie poruszanie się są zawsze w tym samym 
+miejscu.
+
+Fabularnie nie wiem ale jeśli chodzi o samo położenie elementów na 
+ekranie i wygodę sterowania to chyba najlepszy projekt na Steamie.
+
+Przy każdej walce z potworem mapa zamienia się na zdjęcie przeciwnika. 
+Jego statystyki są po prawej, moje po lewej.
+
+Jeszcze od samego początku tak to pomyślano, by losowe osoby 
+mogły dodawać pojedyncze sceny rozsrzerzając uniwersum 
+niezależnie od siebie.
