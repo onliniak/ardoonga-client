@@ -7,6 +7,36 @@ miejscowych to pomyślałem nad czymś takim:
 - Wchodzisz i wybierasz sobie jedną z przygód stworzonych przez graczy.
 - Przedmiot upuszczony w lochu zostaje w nim dopóki ktoś go nie podniesie.
 - Za każdym razem gdy zginiesz, przekazujesz 10% złota na Fundusz Rozrzucania Monet.
+** Osoba projektująca loch wybiera konkretne miejsce, w którym może się zrespawnować nagroda
+albo wybiera opcję losową.
 ** Z każdym kolejnym lochem masz 10% szans na odkrycie lootboxa wartości 1% puli.
-** Wieść szybko się rozniesie, co zapewni stały dopływ nowych podróżników.
 
+= Interakcja System 3000
+
+```adoc
+id:: kanapa
+texture:: 🪵 AND 🐑
+actions:: 💺 AND 💤
+```
+
+Akurat interakcja będzie pewnie jedną z bardziej kontrowersyjnych treści 
+ze względu na to, że ludzkość nie potrafi stworzyć jednego symbolu 
+dla wszystkiego. Albo jak w przypadku egipskich hieroglifów i 
+chińskich znaków zminiaturowane ikonki są nieczytelne.
+
+Sam pomysł jest prosty:
+
+- Każdą rzecz z drewna mogę użyć do rozpalenia ogniska.
+- Każda rzecz z drewna będzie się szybko palić.
+- Każda rzecz z drewna będzie możliwa do zniszczenia większością narzędzi.
+- Wełna jest ciepła.
+- Na miejscu do siedzenia mogę siedzieć w 45 pozycjach.
+- Na miejscu do spania mogę spać.
+- Na miejscu do spania mam wystarczająco dużo miejsca by położyć swoje rzeczy.
+- Kanapy nie można jeść.
+
+Zamiast definiować akcje dla każdego obiektu z osobna 
+po prostu opisuję z czego to jest zrobione i do jakiej 
+kategorii należy. Jeśli potem ktoś powie, że na 
+miejscu do spania możesz spać. To taka możliwość 
+zostaje dodana do wszystkich miejsc tego typu jednocześnie.
