@@ -1,0 +1,20 @@
+Wiem, że psuję wszystkim zabawę ale nigdy nie podobały mi się te magiczne teleportery, 
+że każdy rynek na całym świecie miał te same przedmioty.
+
+Teraz żeby podróżować szybko między miastami, czy kupować/sprzedawać na odległość 
+musisz wynając transport.
+
+- Konwój idzie zawsze wytyczonymi szlakami lądowymi/morskimi.
+** Żeby wysłać chleb dwa miasta dalej musi fizycznie przejechać przez nie.
+- Przy każdym szlaku może zrobić zasadzkę złodziej /-e
+- Pojazdy towarowe kupujesz u graczy lub na rynku.
+- Za każdego NPCa z maksymalnej ilości w puli miasto dostarcza 
+0.1 wozu.
+** Ponownie tylko pełne liczby są brane pod uwagę.
+- Możesz zatrudnić eskortę do konwoju.
+- Z każdym przejechanym wozem skarb Miasta obciążany jest kosztem naprawy.
+- Wciąż możesz zamówić magiczny portal albo podróżować na piechotę.
+
+Z tego co mi się wydaje w początkowej fazie gry zmusi to graczy 
+do przebywania w pobliżu miejsc, w których się pojawili. 
+Za to w środkowej zapewni niespotykany dotąd zarobek stolarzom.
