@@ -1,0 +1,12 @@
+Każdy porządny gnom widząc piwnicę i strażników, natychmiast 
+odwraca się na pięcie i idzie w spokoju pracować. Ale skoro 
+już mamy tylu śmiałków generujących ogromne zarobki dla 
+miejscowych to pomyślałem nad czymś takim:
+
+- Zamiast fizycznych labiryntów lochy funkcjonują bardziej jak portale.
+- Wchodzisz i wybierasz sobie jedną z przygód stworzonych przez graczy.
+- Przedmiot upuszczony w lochu zostaje w nim dopóki ktoś go nie podniesie.
+- Za każdym razem gdy zginiesz, przekazujesz 10% złota na Fundusz Rozrzucania Monet.
+** Z każdym kolejnym lochem masz 10% szans na odkrycie lootboxa wartości 1% puli.
+** Wieść szybko się rozniesie, co zapewni stały dopływ nowych podróżników.
+
