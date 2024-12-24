@@ -3,7 +3,7 @@
 - Z każdą godziną spędzoną w mieście gracz dodaje 0.1 NPCa do puli.
 - Gra umożliwia korzystanie tylko z pełnych liczb, więc albo 
 10 osób jest w mieście albo jedna przez 10 godzin na każdego NPCa.
--- Jeśli wylogowany gracz spędzi w mieście 20 godzin, to silnik 
+** Jeśli wylogowany gracz spędzi w mieście 20 godzin, to silnik 
 traktuje to jako 3 NPCów.
 - Z każdym zbudowanym warsztatem ilość NPCów zwiększa się o 10.
 - Rozbudowa prywatnych domów i farm zwiększa ją o 0.1 na poziom.
