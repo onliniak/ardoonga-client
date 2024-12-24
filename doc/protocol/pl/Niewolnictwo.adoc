@@ -26,7 +26,8 @@ Szczególnym miejscem są zakłady produkcyjne jak kopalnie, czy tartaki.
 - Nie potrzebujesz surowców startowych.
 - Wszystko, co zostanie wydobyte ląduje w wewnętrznym magazynie.
 
-- Miasto też może zatrudniać pracowników jako strażników.
+Miasto też może zatrudniać pracowników jako strażników.
+
 - Osoba z największą statystyką dowodzenia może wysłać 
 cały swój oddział w konkretne miejsce.
 - Strażnicy zarabiają premię +1% za każdy ugaszony pożar 
