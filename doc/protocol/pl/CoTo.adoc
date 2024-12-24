@@ -1,0 +1,5 @@
+Raz na jakiś czas wyrzucam cały projekt do kosza i piszę go od zera. 
+Chcę dojść do poziomu pomysł → testy. Gdzie testy stanowią formalną 
+dokumentację, a moje bazgroły to wskazówki do ich napisania.
+
+Spójrz: Ardoonga Smithy.
