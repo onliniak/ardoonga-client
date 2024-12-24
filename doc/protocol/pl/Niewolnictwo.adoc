@@ -1,0 +1,32 @@
+- Każde miasto ma swoją pulę NPCów dostępnych do zatrudnienia.
+- Po wylogowaniu gracz staje się NPCem i dołącza do puli.
+- Z każdą godziną spędzoną w mieście gracz dodaje 0.1 NPCa do puli.
+- Gra umożliwia korzystanie tylko z pełnych liczb, więc albo 
+10 osób jest w mieście albo jedna przez 10 godzin na każdego NPCa.
+- Z każdym zbudowanym warsztatem ilość NPCów zwiększa się o 10.
+- Rozbudowa prywatnych domów i farm zwiększa ją o 0.1 na poziom.
+
+System zastępuje fuchę Cześnika. Mając farmę lub warsztat możesz zamieścić 
+ogłoszenie za ile monet wynajmiesz pracownika na 1 godzinę pracy. 
+Pracować mogą zarówno NPCe, jak i żywi gracze. Wynagrodzenie 
+zostanie usunięte z Twojego konta i przeniesione do wewnętrznego 
+skarbca budynku. 
+
+- Nieuczciwi gracze mogą spróbować otworzyć skarbiec i Cię okraść.
+- Wszystkie narzędzia i surowce do pracy musisz dostarczyć sam.
+- Możesz aktywować premię +20% zwiększającą szansę na znalezienie planów 
+narzędzi.
+- Możesz podzielić się częścią wyprodukowanych przedmiotów z graczami.
+
+Szczególnym miejscem są zakłady produkcyjne jak kopalnie, czy tartaki.
+
+- Nie potrzebujesz surowców startowych.
+- Wszystko, co zostanie wydobyte ląduje w wewnętrznym magazynie.
+
+- Miasto też może zatrudniać pracowników jako strażników.
+- Osoba z największą statystyką dowodzenia może wysłać 
+cały swój oddział w konkretne miejsce.
+- Strażnicy zarabiają premię +1% za każdy ugaszony pożar 
+i złapanego przestępcę.
+- Ta premia bierze się znikąd.
+- Za stawkę podstawową płaci miasto.
