@@ -5,6 +5,7 @@
 10 osób jest w mieście albo jedna przez 10 godzin na każdego NPCa.
 ** Jeśli wylogowany gracz spędzi w mieście 20 godzin, to silnik 
 traktuje to jako 3 NPCów.
+- Bonus z aktywnych graczy resetuje się co 24 godziny.
 - Z każdym zbudowanym warsztatem ilość NPCów zwiększa się o 10.
 - Rozbudowa prywatnych domów i farm zwiększa ją o 0.1 na poziom.
 
