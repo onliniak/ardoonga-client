@@ -19,6 +19,10 @@ Tekst rozpoczęty od [mixer id nazwa] pozwala nam modyfikować
 działanie podstawowych statystyk jeśli w miksturze zawarty jest 
 składnik o wskazanym identyfikatorze.
 
+TIP:: Możesz też użyć mixera, by zaznaczyć że składnik 
+należy umieścić w odpowiednim naczyniu albo poddać 
+odpowiedniej obróbce.
+
 Możemy też używać warunków [if ...] 
 sprawdzanych w czasie zbierania rośliny:
 
@@ -38,6 +42,7 @@ sprawdzanych w czasie zbierania rośliny:
 - lt = mniejsze niż
 - gt = większe niż
 
+////
 type może mieć jedną z poniższych wartości:
 - ✿(U+273F) dla czegoś z kwiatów, traw i podobnych roślin
 - ⛰(U+26F0) dla skał
@@ -57,10 +62,10 @@ chińskich znaków zminiaturowane ikonki są nieczytelne.
 Ogółem chcę mieć coś, co pozwoli zapisać przepis na coś.
 Na przykład "zbierz owoce z drzewa, wrzuć do garnka z wodą 
 i zaczekaj 15 minut".
+////
 
 ```adoc
 id:: illani
-type:: ✿
 hex:: 72010F #https://www.npmjs.com/package/hex-color-to-color-name
 
 życie_max:: -15
