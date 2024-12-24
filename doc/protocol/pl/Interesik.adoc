@@ -1,0 +1,14 @@
+Jako rzemieślnik często miałem problemy w stylu "muszę zamówić X 
+surowców od graczy i zapłacić im za każdą sztukę jaką mi przyślą".
+
+Dlatego marzyłem o czymś takim:
+
+- W każdym warsztacie możesz zaznaczyć, że kupisz określone składniki.
+- Możesz też zamówić dostawę z magazynu miejskiego.
+- Za każdym razem, gdy gracz podniesie jakiś kamulec wyświetlą mu się opcje:
+** Włóż do swojego ekwipunku
+** Sprawdź za ile mogę to sprzedać
+*** Oferta magazynu miejskiego
+*** Oferta prywatnych przedsiębiorców
+- Pieniądze idą z wewnętrznego skarbca warsztatu.
+- Bez zbędnych formalności.
